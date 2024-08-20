@@ -62,3 +62,9 @@ body {
 {
     @apply w-1/2 h-auto rounded-full mx-60;
 }
+
+.youtube-video
+{
+    @apply w-[100%] aspect-video my-8 mx-auto;
+    @apply w-[55%]
+}

@@ -3,14 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robin Zeitlin | XYZ</title>
+    <title>Robin Zeitlin | xyz</title>
     <link rel="stylesheet" href="/src/output.css">
 </head>
 <body>
-    
-    <div class="container">
-        <h1>Welcome to the XYZ Project</h1>
-        <p>This page is dedicated to the XYZ project using C++ and OpenGL.</p>
-    </div>
+    <nav class="navigation-bar">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="primary-font !text-4xl">Robin Zeitlin | GamePlay Programmer</a>
+            <div class="flex space-x-4">
+
+                <!--- Linkedin -->
+                <a href="https://www.linkedin.com/in/robin-zeitlin-778a9127a/" class="navigation-image">
+                    <img src="/img/LinkedinIcon.png" alt="Image 1" class="navigation-image">
+                </a>
+
+                <!--- Github -->
+                <a href="https://www.linkedin.com/in/robin-zeitlin-778a9127a/" class="navigation-image">
+                    <img src="/img/GithubIcon.png" alt="Image 1" class="navigation-image">
+                </a>
+
+            </div>
+            <div class="space-x-4">
+                <a class="navigation-slot primary-font !cursor-pointer" onclick="window.location.href='index.html';">HomePage</a>
+                <a href="#video-section" class="navigation-slot primary-font">Video</a>
+                <a href="#about-me" class="navigation-slot primary-font">About Me</a>
+            </div>
+        </div>
+
+        <div id="video-section" class="youtube-video">
+            <iframe class="w-full h-full" src="https://youtube.com/embed/7uAlE13Fne4?si=QjmPrtM8-J-__TN1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </nav>
 </body>
 </html>
