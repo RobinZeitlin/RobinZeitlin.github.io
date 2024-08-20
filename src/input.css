@@ -68,3 +68,7 @@ body {
     @apply w-[100%] aspect-video my-8 mx-auto;
     @apply w-[55%]
 }
+
+.tab-button {
+    @apply px-4 py-2 bg-blue-500 text-white rounded-lg focus:outline-none ;
+}
