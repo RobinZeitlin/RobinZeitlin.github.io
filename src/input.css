@@ -1,3 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    @apply bg-secondary; /* Replace with the Tailwind class for your color */
+}
+
+.primary-font
+{
+    @apply  text-white font-main-font text-lg;
+}
+
+.navigation-bar
+{
+    @apply fixed top-0 left-0 w-full bg-secondary p-4 z-50;
+}
+
+.navigation-slot
+{
+    @apply text-white hover:text-gray-300;
+}
+
+.navigation-image
+{
+    @apply w-8 h-8 bg-center transform transition-transform duration-300 hover:scale-105 cursor-pointer;
+}
+
+.selection-container
+{
+    @apply grid grid-cols-1 gap-4 items-center w-full max-w-screen-2xl mx-auto;
+    @apply md:grid-cols-2
+}
+
+.section
+{
+    @apply w-full h-96 bg-cover bg-center my-4 bg-center transform transition-transform duration-300 hover:scale-105 rounded-lg cursor-pointer;
+}
+
+.upper-left-text
+{
+    @apply primary-font absolute top-0 left-0 m-4;
+}
+
+.lower-upper-left-text
+{
+    @apply primary-font absolute left-0 m-4 top-16 font-light !text-amber-200;
+}
+
+.section-information
+{
+    @apply w-full h-full bg-cover bg-center scroll-mb-3 bg-primary py-60;
+}
+
+.portrait
+{
+    @apply w-1/2 h-auto rounded-full mx-60;
+}

@@ -4,10 +4,86 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <title>Robin Zeitlin | HomePage</title>
         <link rel="stylesheet" href="/src/output.css">
     </head>
-    <body>
-        <h1 class="bg-blue-500">Hello Tailwind</h1>
+    <body class="box-border">
+
+        <nav class="navigation-bar">
+            <div class="container mx-auto flex justify-between items-center">
+                <a href="#" class="primary-font !text-4xl">Robin Zeitlin | GamePlay Programmer</a>
+                <div class="flex space-x-4">
+
+                    <!--- Linkedin -->
+                    <a href="https://www.linkedin.com/in/robin-zeitlin-778a9127a/" class="navigation-image">
+                        <img src="/img/LinkedinIcon.png" alt="Image 1" class="navigation-image">
+                    </a>
+
+                    <!--- Github -->
+                    <a href="https://www.linkedin.com/in/robin-zeitlin-778a9127a/" class="navigation-image">
+                        <img src="/img/GithubIcon.png" alt="Image 1" class="navigation-image">
+                    </a>
+
+                </div>
+                <div class="space-x-4">
+                    <a href="#home" class="navigation-slot primary-font">Projects</a>
+                    <a href="#about-me" class="navigation-slot primary-font">About Me</a>
+                </div>
+            </div>
+        </nav>
+
+        <div id="home" class="w-full h-16 bg-cover bg-center scroll-mb-3 my-4">
+        </div>
+
+        <div class="selection-container ">
+
+            <!-- Section 1-->
+            <div class="section" style="background-image: url('../img/xyzFrontPage.gif') ;" onclick="window.location.href='xyz.html';">
+                <div class="bg-black bg-opacity-0 h-full flex flex-col items-center justify-center">
+                    <h2 class="upper-left-text !text-6xl">(xyz)⁰</h2>
+                    <h2 class="lower-upper-left-text !text-4xl">C++ / OpenGL</h2>
+                </div>
+            </div>
+
+            <!-- Section 2 -->
+            <div class="section" style="background-image: url('../img/HonkerFrontPage.gif');" onclick="window.location.href='honker.html';">
+                <div class="bg-black bg-opacity-0 h-full flex items-center justify-center">
+                    <h2 class="upper-left-text !text-6xl">Honker</h2>
+                    <h2 class="lower-upper-left-text !text-4xl" >C# / Unity</h2>
+                </div>
+            </div>
+            
+            <!-- Section 3 -->
+            <div class="section" style="background-image: url('https://via.placeholder.com/1200x400');" onclick="window.location.href='xyz.html';">
+                <div class="bg-black bg-opacity-0 h-full flex items-center justify-center">
+                    <h2 class="upper-left-text !text-6xl">Reberryon</h2>
+                    <h2 class="lower-upper-left-text !text-4xl" >C++ / Unreal Engine</h2>
+                </div>
+            </div>
+
+            <!-- Section 4 -->
+            <div class="section" style="background-image: url('https://via.placeholder.com/1200x400');" >
+                <div class="bg-black bg-opacity-0 h-full flex items-center justify-center">
+                    <h2 class="upper-left-text !text-6xl">Coming Soon...</h2>
+                    <h2 class="lower-upper-left-text !text-4xl" >Undertermined</h2>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="about-me" class="section-information">
+            <div class="bg-black bg-opacity-0 grid grid-cols-1 md:grid-cols-2 items-center">
+                <!-- Left Column (for image or other content) -->
+                <div class="p-4">
+                    <img src="/img/Portrait.jpg" alt="About Me" class="portrait">
+                </div>
+        
+                <!-- Right Column (for text) -->
+                <div class="p-4">
+                    <h1 class="primary-font !text-4xl">Robin Zeitlin | Gameplay Programmer</h1>
+                    <p class="primary-font"> Hi, im Robin, a GamePlay Programmer currently studying at FutureGames.</p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap');
+
 /*
 ! tailwindcss v3.4.10 | MIT License | https://tailwindcss.com
 */
@@ -446,7 +448,7 @@ video {
   display: none;
 }
 
-*, ::before, ::after {
+*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -500,7 +502,7 @@ video {
   --tw-contain-style:  ;
 }
 
-::backdrop {
+::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -554,7 +556,302 @@ video {
   --tw-contain-style:  ;
 }
 
-.bg-blue-500 {
+.container{
+  width: 100%;
+}
+
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-4{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.my-8{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.box-border{
+  box-sizing: border-box;
+}
+
+.flex{
+  display: flex;
+}
+
+.grid{
+  display: grid;
+}
+
+.aspect-video{
+  aspect-ratio: 16 / 9;
+}
+
+.h-16{
+  height: 4rem;
+}
+
+.h-full{
+  height: 100%;
+}
+
+.h-80{
+  height: 20rem;
+}
+
+.w-full{
+  width: 100%;
+}
+
+.w-80{
+  width: 20rem;
+}
+
+.w-\[65\%\]{
+  width: 65%;
+}
+
+.w-\[55\%\]{
+  width: 55%;
+}
+
+.scroll-mb-3{
+  scroll-margin-bottom: 0.75rem;
+}
+
+.grid-cols-1{
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1rem * var(--tw-space-x-reverse));
+  margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.bg-black{
   --tw-bg-opacity: 1;
-  background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-opacity-0{
+  --tw-bg-opacity: 0;
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-center{
+  background-position: center;
+}
+
+.p-4{
+  padding: 1rem;
+}
+
+.\!text-4xl{
+  font-size: 2.25rem !important;
+  line-height: 2.5rem !important;
+}
+
+.\!text-6xl{
+  font-size: 3.75rem !important;
+  line-height: 1 !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body{
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 50 64 / var(--tw-bg-opacity));
+  /* Replace with the Tailwind class for your color */
+}
+
+.primary-font{
+  font-family: Anek Devanagari;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.navigation-bar{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 50;
+  width: 100%;
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 50 64 / var(--tw-bg-opacity));
+  padding: 1rem;
+}
+
+.navigation-slot{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.navigation-slot:hover{
+  --tw-text-opacity: 1;
+  color: rgb(209 213 219 / var(--tw-text-opacity));
+}
+
+.navigation-image{
+  height: 2rem;
+  width: 2rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  cursor: pointer;
+  background-position: center;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.navigation-image:hover{
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.selection-container{
+  margin-left: auto;
+  margin-right: auto;
+  display: grid;
+  width: 100%;
+  max-width: 1536px;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (min-width: 768px){
+  .selection-container{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+.section{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  height: 24rem;
+  width: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  cursor: pointer;
+  border-radius: 0.5rem;
+  background-size: cover;
+  background-position: center;
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+
+.section:hover{
+  --tw-scale-x: 1.05;
+  --tw-scale-y: 1.05;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.upper-left-text{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 1rem;
+  font-family: Anek Devanagari;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.lower-upper-left-text{
+  position: absolute;
+  left: 0px;
+  top: 4rem;
+  margin: 1rem;
+  font-weight: 300;
+  color: rgb(253 230 138 / var(--tw-text-opacity)) !important;
+  font-family: Anek Devanagari;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.section-information{
+  height: 100%;
+  width: 100%;
+  scroll-margin-bottom: 0.75rem;
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 32 43 / var(--tw-bg-opacity));
+  background-size: cover;
+  background-position: center;
+  padding-top: 15rem;
+  padding-bottom: 15rem;
+}
+
+.portrait{
+  margin-left: 15rem;
+  margin-right: 15rem;
+  height: auto;
+  width: 50%;
+  border-radius: 9999px;
+}
+
+@media (min-width: 768px){
+  .md\:grid-cols-2{
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
