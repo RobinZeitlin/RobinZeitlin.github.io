@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/vs2015.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
-    <title>Robin Zeitlin | Honker</title>
+    <title>Robin Zeitlin | xyz</title>
     <link rel="stylesheet" href="/src/output.css">
     <style>
         .tab-content {
@@ -33,8 +33,10 @@
             </div>
 
             <div class="space-x-4">
-                <a class="navigation-slot primary-font !cursor-pointer" onclick="window.location.href='index.html';">Home</a>
+                <a class="navigation-slot primary-font !cursor-pointer" onclick="window.location.href='index.html';">HomePage</a>
                 <a href="#video-section" class="navigation-slot primary-font">Video</a>
+                <a href="#code" class="navigation-slot primary-font">Code</a>
+                <a href="#analysis" class="navigation-slot primary-font">Analysis</a>
             </div>
 
         </div>
@@ -52,6 +54,9 @@
                 <h1 class="primary-font !text-4xl !font-thin !text-amber-200">C# / Unity / Steam</h1>
                 <h1 class="primary-font !text-2xl !font-thin">👥 solo project</h1>
                 <h1 class="primary-font !text-2xl !font-thin">📅 1 month</h1>
+                <a href="https://github.com/RobinZeitlin/May-24" target="_blank" class="text-blue-500 hover:underline !text-2xl">
+                    Github
+                </a>
             </div>
 
              <div class="items-center justify-center p-4 rounded-lg">
@@ -59,14 +64,17 @@
             </div>
         </div>
         
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div id="code" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
             <div class="flex flex-col justify-center p-4 rounded-lg">
                 <h1 class="primary-font !text-4xl items-center">Dots Interactions -> Tldr</h1>
                 <h1 class="primary-font items-center">After retrieving the Input from the ActionMap a spherecast is used on both the entity's and the mouse position to detect overlapping collisions. The objects overlapping with the mouse gains the "Scale Effect" component causing them to react after hovering.</h1>
             </div>
+
             <div class="flex items-center justify-center p-4 rounded-lg">
                 <img src="/img/HonkerFrontPage.gif" alt="Goals" class="max-w-full h-auto rounded-lg">
             </div>
+            
         </div>
 
     <div class="container mx-auto p-4">
@@ -100,6 +108,45 @@
         </div>
     </div>
 
+    <div id="analysis" class="container mx-auto p-4 mt-8">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+            <div class="flex flex-col justify-center p-4 rounded-lg">
+                <h1 class="primary-font !text-4xl items-center">Analysis</h1>
+                <h1 class="primary-font items-center">I created this game with the sole purpose of learning to work with DOTS/ESC within a span of 3 weeks. The game was then integrated with Steamworks and published on Steam within one month from the start of the project. Reflecting on this experience, I realized that I learned much more than I initially anticipated. However, the two biggest takeaways and the ones I feel like I have become very good at is how to scope a project effectively and how to finish and deliver it within the given deadline.</h1>
+            </div>
+
+            <div class="flex items-center justify-center p-4 rounded-lg">
+                <img src="/img/steamstatshonker.jpg" alt="Goals" class="max-w-full h-auto rounded-lg">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container mx-auto p-4 mt-8">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+            <div class="flex items-center justify-center p-4 rounded-lg">
+                <img src="/img/honkershowcaseindiegamedungeon.jpg" alt="Goals" class="max-w-full h-auto rounded-lg">
+            </div>
+
+            <div class="flex flex-col justify-center p-4 rounded-lg">
+                <h1 class="primary-font !text-4xl items-center">Indie Game Dungeon Showcase</h1>
+                <h1 class="primary-font items-center">I showcased Honker at the "LinkedIn-Bar" together with the "Indie Game Dungeon." This was an incredible step in my journey due to the immense feedback (both positive and negative) I received from such a variety of experienced and talented individuals.</h1>
+            </div>
+
+        </div>
+        </div>
+
+        <div class="flex justify-center mt-8">
+            <button onclick="scrollToTop()" class="bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-700">Top</button>
+        </div>
+        
+
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/cpp.min.js"></script>
     <script>
         // Function to handle tab switching
@@ -156,6 +203,10 @@
 
         // Optionally, initialize with the first tab active
         switchTab('content1');
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
     </script>
 </body>
 </html>
