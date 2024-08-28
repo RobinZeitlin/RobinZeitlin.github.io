@@ -20,7 +20,7 @@
 
     <nav class="navigation-bar">
         <div class="container mx-auto flex justify-between items-center">
-            <a href="#" class="primary-font !text-4xl">Robin Zeitlin | GamePlay Programmer</a>
+            <a href="index.html" class="primary-font !text-4xl">Robin Zeitlin | GamePlay Programmer</a>
             <div class="flex space-x-4">
                 <!--- Linkedin -->
                 <a href="https://www.linkedin.com/in/robin-zeitlin-778a9127a/" class="navigation-image">
@@ -35,8 +35,9 @@
             <div class="space-x-4">
                 <a class="navigation-slot primary-font !cursor-pointer" onclick="window.location.href='index.html';">HomePage</a>
                 <a href="#video-section" class="navigation-slot primary-font">Video</a>
-                <a href="#code" class="navigation-slot primary-font">Code</a>
-                <a href="#analysis" class="navigation-slot primary-font">Analysis</a>
+                <a href="#parabolicfunction" class="navigation-slot primary-font">Parabolic-Function</a>
+                <a href="#drawmesh" class="navigation-slot primary-font">Draw Mesh</a>
+                <a href="#keytodoor" class="navigation-slot primary-font">Key To Door</a>
             </div>
 
         </div>
@@ -51,7 +52,7 @@
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="flex flex-col items-center justify-center">
                 <h1 class="primary-font !text-6xl">Reberryon</h1>
-                <h1 class="primary-font !text-4xl !font-thin !text-amber-200">C++ / Unreal Engine / Steam</h1>
+                <h1 class="primary-font !text-4xl !font-thin !text-amber-200">C++ / Unreal Engine / Steam / Perforce</h1>
                 <h1 class="primary-font !text-2xl !font-thin">👥 17 people</h1>
                 <h1 class="primary-font !text-2xl !font-thin">📅 10 weeks</h1>
             </div>
@@ -61,9 +62,9 @@
             </div>
         </div>
         
-        <div id="code" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div id="parabolicfunction" class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-            <div class="flex flex-col justify-center p-4 rounded-lg">
+            <div id="parabolicfunction" class="flex flex-col justify-center p-4 rounded-lg">
                 <h1 class="primary-font !text-4xl items-center">Parabolic-Function based throwing -> Tldr</h1>
                 <h1 class="primary-font items-center mb-5">Using a parabolic function, calculate the path that the projectile should take when traveling towards the target point. Also added a UFlotCurve as a size determination on the trajectory line. When the player shoots, the projectile receives the trajectory points and travels through them. When the desired hit point isn't possible, the curve turns red.</h1>
                 <h1 class="primary-font !text-4xl items-center">Curve</h1>
@@ -73,7 +74,7 @@
             </div>
 
             <div class="flex items-center justify-center p-4 rounded-lg">
-                <img src="/img/HonkerFrontPage.gif" alt="Goals" class="max-w-full h-auto rounded-lg">
+                <img src="/img/reberryonshowcase.gif" alt="Goals" class="max-w-full h-auto rounded-lg">
             </div>
             
         </div>
@@ -101,37 +102,48 @@
             </div>
         </div>
 
-        <div id="analysis" class="container mx-auto p-4 mt-8">
+        <div id="drawmesh" class="container mx-auto p-4 mt-8">
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
                 <div class="flex flex-col justify-center p-4 rounded-lg">
-                    <h1 class="primary-font !text-4xl items-center">Analysis</h1>
-                    <h1 class="primary-font items-center">I created this game with the sole purpose of learning to work with DOTS/ESC within a span of 3 weeks. The game was then integrated with Steamworks and published on Steam within one month from the start of the project. Reflecting on this experience, I realized that I learned much more than I initially anticipated. However, the two biggest takeaways and the ones I feel like I have become very good at is how to scope a project effectively and how to finish and deliver it within the given deadline.</h1>
+                    <h1 class="primary-font !text-4xl items-center mb-4">Visualizing Dynamic Projectile Trajectories Using Meshes and Variable Scaling</h1>
+                    <h1 class="primary-font items-center">Using a parbolic function to calculate the path that the projectile should take when travelling towards the target point. Also added a UFloatCurve as a size determination on the trajectory line.</h1>
                 </div>
 
                 <div class="flex items-center justify-center p-4 rounded-lg">
-                    <img src="/img/steamstatshonker.jpg" alt="Goals" class="max-w-full h-auto rounded-lg">
+                    <img src="/img/ShowcaseCurve.gif" alt="Goals" class="max-w-full h-auto rounded-lg">
                 </div>
 
+                </div>
+
+            <div class="flex flex-col justify-center p-4 rounded-lg">
+                <pre><code id="curve" class="C++">Loading...</code></pre>
             </div>
 
         </div>
 
-        <div class="container mx-auto p-4 mt-8">
+        
+
+        <div id="keytodoor" class="container mx-auto p-4 mt-8">
 
             <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
                 <div class="flex items-center justify-center p-4 rounded-lg">
-                    <img src="/img/honkershowcaseindiegamedungeon.jpg" alt="Goals" class="max-w-full h-auto rounded-lg">
+                    <img src="/img/ShowcaseKeyAnimation.gif" alt="Goals" class="max-w-full h-auto rounded-lg">
                 </div>
 
                 <div class="flex flex-col justify-center p-4 rounded-lg">
-                    <h1 class="primary-font !text-4xl items-center">Indie Game Dungeon Showcase</h1>
-                    <h1 class="primary-font items-center">I showcased Honker at the "LinkedIn-Bar" together with the "Indie Game Dungeon." This was an incredible step in my journey due to the immense feedback (both positive and negative) I received from such a variety of experienced and talented individuals.</h1>
+                    <h1 class="primary-font !text-4xl items-center mb-4">Key that opens doors -> Tldr</h1>
+                    <h1 class="primary-font items-center">The key idles, when the player approaches and gets within the set radius, it switches states and starts following the player. When the key gets within the target range from a door it will open the door and play the necessary timelien animations..</h1>
                 </div>
 
             </div>
+
+            <div class="flex flex-col justify-center p-4 rounded-lg">
+                <pre><code id="key" class="C++">Loading...</code></pre>
+            </div>
+
         </div>
 
         <div class="flex justify-center mt-8">
@@ -173,14 +185,24 @@
                 .then(data => {
                     // Update code snippets
                     if (data.parabolic) {
-                        const codeElement1 = document.getElementById('parabolic');
-                        codeElement1.textContent = data.parabolic;
-                        hljs.highlightElement(codeElement1);  // Highlight updated code
+                    const codeElement1 = document.getElementById('parabolic');
+                    codeElement1.textContent = data.parabolic;
+                    hljs.highlightElement(codeElement1);  
                     }
                     if (data.projectile) {
-                        const codeElement2 = document.getElementById('projectile');
-                        codeElement2.textContent = data.projectile;
-                        hljs.highlightElement(codeElement2);  // Highlight updated code
+                    const codeElement2 = document.getElementById('projectile');
+                    codeElement2.textContent = data.projectile;
+                    hljs.highlightElement(codeElement2);  
+                    }
+                    if (data.curve) {
+                    const codeElement3 = document.getElementById('curve');
+                    codeElement3.textContent = data.curve;
+                    hljs.highlightElement(codeElement3);  
+                    }
+                    if (data.key) {
+                    const codeElement4 = document.getElementById('key');
+                    codeElement4.textContent = data.key;
+                    hljs.highlightElement(codeElement4);  
                     }
                 })
                 .catch(error => console.error('Error fetching JSON:', error));
