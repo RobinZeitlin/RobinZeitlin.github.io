@@ -17,6 +17,17 @@ body {
     @apply  text-white font-main-font text-lg;
 }
 
+.button-font
+{
+    @apply  text-black font-main-font text-lg;
+}
+
+.header-font
+{
+    @apply  text-amber-200 font-main-font text-lg;
+}
+
+
 .navigation-bar
 {
     @apply fixed top-0 left-0 w-full bg-secondary p-4 z-50;
@@ -40,7 +51,7 @@ body {
 
 .section
 {
-    @apply w-full h-96 bg-cover bg-center my-4 bg-center transform transition-transform duration-300 hover:scale-105 rounded-lg cursor-pointer;
+    @apply w-full h-96 bg-cover bg-center my-4 bg-center transform transition-transform duration-300 hover:scale-95 rounded-lg cursor-pointer;
 }
 
 .upper-left-text
@@ -70,5 +81,5 @@ body {
 }
 
 .tab-button {
-    @apply px-4 py-2 rounded-lg focus:outline-none ;
+    @apply px-6 py-3 rounded-lg focus:outline-none ;
 }
