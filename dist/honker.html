@@ -50,8 +50,13 @@
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div class="flex flex-col items-center justify-center">
-                <h1 class="primary-font !text-6xl">Honker</h1>
-                <h1 class="primary-font !text-4xl !font-thin !text-amber-200">C# / Unity / Steam</h1>
+                <div class="flex flex-row">
+                    <a href="https://store.steampowered.com/app/2875910/Honker/" target="_blank" class="mr-4">
+                        <img src="/img/steamicon.png" alt="Steam Logo" class="h-16 w-16 object-contain">
+                    </a>
+                    <h1 class="primary-font !text-6xl">Honker</h1>
+                </div>
+                <h1 class="primary-font !text-4xl !font-thin !text-amber-200">C# / Unity</h1>
                 <h1 class="primary-font !text-2xl !font-thin">👥 solo project</h1>
                 <h1 class="primary-font !text-2xl !font-thin">📅 1 month</h1>
                 <a href="https://github.com/RobinZeitlin/May-24" target="_blank" class="text-blue-500 hover:underline !text-2xl">
@@ -60,8 +65,16 @@
             </div>
 
              <div class="items-center justify-center p-4 rounded-lg">
-                <h1 class="primary-font">This game was finished and published on May 15th after being produced over the span of a single month. The focus for the project was to utilize ESC "Unity's Entity System" in production of a game. Since release the game has recieved very positive feedback on steam and was showcased by me at the 2024 "Linkedin-Bar Decade Party" as part of the "Indie Game Dungeon".</h1>
+                <h1 class="primary-font">This game was finished and published on May 15th after being produced over the span of a single month. The focus for the project was to utilize ECS "Unity's Entity System" in production of a game. Since release the game has recieved very positive feedback on steam and was showcased by me at the 2024 "Linkedin-Bar Decade Party" as part of the "Indie Game Dungeon".</h1>
             </div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center p-4 rounded-lg">
+            <video autoplay muted loop class="max-w-screen-m h-auto rounded-lg">
+                <source src="/videos/honker_showcase.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="text-sm text-center mt-2 primary-font">Gameplay showcase.</p>
         </div>
         
         <div id="code" class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -71,8 +84,12 @@
                 <h1 class="primary-font items-center">After retrieving the Input from the ActionMap a spherecast is used on both the entity's and the mouse position to detect overlapping collisions. The objects overlapping with the mouse gains the "Scale Effect" component causing them to react after hovering.</h1>
             </div>
 
-            <div class="flex items-center justify-center p-4 rounded-lg">
-                <img src="/img/HonkerFrontPage.gif" alt="Goals" class="max-w-full h-auto rounded-lg">
+            <div class="flex flex-col items-center justify-center p-4 rounded-lg">
+                <video autoplay muted loop class="max-w-screen-m h-auto rounded-lg">
+                    <source src="/videos/honker_interactions.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="text-sm text-center mt-2 primary-font">Showcase of the geese interacting with collisions.</p>
             </div>
             
         </div>
@@ -109,24 +126,6 @@
     </div>
 
     <div id="analysis" class="container mx-auto p-4 mt-8">
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-
-            <div class="flex flex-col justify-center p-4 rounded-lg">
-                <h1 class="header-font !text-4xl items-center">Analysis</h1>
-                <h1 class="primary-font items-center">I created this game with the sole purpose of learning to work with DOTS/ESC within a span of 3 weeks. The game was then integrated with Steamworks and published on Steam within one month from the start of the project. Reflecting on this experience, I realized that I learned much more than I initially anticipated. However, the two biggest takeaways and the ones I feel like I have become very good at is how to scope a project effectively and how to finish and deliver it within the given deadline.</h1>
-            </div>
-
-            <div class="flex items-center justify-center p-4 rounded-lg">
-                <img src="/img/steamstatshonker.jpg" alt="Goals" class="max-w-full h-auto rounded-lg">
-            </div>
-
-        </div>
-
-    </div>
-
-    <div class="container mx-auto p-4 mt-8">
-
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
             <div class="flex items-center justify-center p-4 rounded-lg">
@@ -139,6 +138,23 @@
             </div>
 
         </div>
+    </div>
+
+    <div class="container mx-auto p-4 mt-8">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+            <div class="flex flex-col justify-center p-4 rounded-lg">
+                <h1 class="header-font !text-4xl items-center">Performance Analysis</h1>
+                <h1 class="primary-font items-center">I created this game with the sole purpose of learning to work with DOTS/ESC within a span of 3 weeks. The game was then integrated with Steamworks and published on Steam within one month from the start of the project. Reflecting on this experience, I realized that I learned much more than I initially anticipated. However, the two biggest takeaways and the ones I feel like I have become very good at is how to scope a project effectively and how to finish and deliver it within the given deadline.</h1>
+            </div>
+
+            <div class="flex items-center justify-center p-4 rounded-lg">
+                <img src="/img/steamstatshonker.jpg" alt="Goals" class="max-w-full h-auto rounded-lg">
+            </div>
+
+        </div>
+        
         </div>
 
         <div class="flex justify-center mt-8">

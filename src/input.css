@@ -43,10 +43,20 @@ body {
     @apply w-8 h-8 bg-center transform transition-transform duration-300 hover:scale-105 cursor-pointer;
 }
 
-.selection-container
-{
-    @apply grid grid-cols-1 gap-4 items-center w-full max-w-screen-2xl mx-auto;
-    @apply md:grid-cols-2
+.selection-container {
+    @apply grid grid-cols-1 gap-4 items-center justify-items-center w-full max-w-screen-2xl mx-auto;
+    @apply md:grid-cols-2;
+}
+
+@media (min-width: 768px) {
+    .selection-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .selection-container > .section:nth-child(3) {
+        grid-column: span 2;
+        justify-self: center;
+    }
 }
 
 .section
