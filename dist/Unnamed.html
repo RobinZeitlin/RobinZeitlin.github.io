@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/vs2015.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <title>Robin Zeitlin | Unnamed</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <style>
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navigation-bar">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/index.html" class="primary-font !text-4xl">Robin Zeitlin | GamePlay Programmer</a>
+            <div class="flex space-x-4">
+                <!--- Linkedin -->
+                <a href="https://www.linkedin.com/in/robin-zeitlin-778a9127a/" class="navigation-image">
+                    <img src="/img/LinkedinIcon.png" alt="LinkedIn Icon" class="navigation-image">
+                </a>
+                <!--- Github -->
+                <a href="https://github.com/robinzeitlin" class="navigation-image">
+                    <img src="/img/GithubIcon.png" alt="GitHub Icon" class="navigation-image">
+                </a>
+            </div>
+
+            <div class="space-x-4">
+                <a class="navigation-slot primary-font !cursor-pointer" onclick="window.location.href='/index.html';">HomePage</a>
+                <a href="#video-section" class="navigation-slot primary-font">Video</a>
+                <a href="#classespart" class="navigation-slot primary-font">Classes</a>
+                <a href="#movementpart" class="navigation-slot primary-font">Movement</a>
+                <a href="#trailspart" class="navigation-slot primary-font">Trail System</a>
+                <a href="#gamepart" class="navigation-slot primary-font">Game Class</a>
+            </div>
+
+        </div>
+    </nav>
+    
+    <div id="video-section" class="youtube-video">
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/NpEaa2P7qZI?si=1kTLOFXmbGsEO3ED" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="container mx-auto p-4">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex flex-col items-center justify-center">
+                <h1 class="primary-font !text-6xl">Unnamed</h1>
+                <h1 class="primary-font !text-4xl !font-thin !text-amber-200">C++ / SDL2</h1>
+                <h1 class="primary-font !text-2xl !font-thin">👥 1</h1> 
+                <h1 class="primary-font !text-2xl !font-thin">📅 ? month</h1>
+                <a href="https://github.com/RobinZeitlin/SDL2" target="_blank" class="text-blue-500 hover:underline !text-2xl">
+                    Github
+                </a>
+            </div>
+
+             <div class="items-center justify-center p-4 rounded-lg">
+                <h1 class="primary-font">The Engine was built for this project specifically. I implemented several gameplay features, including AABB collision detection, physics, and UI using ImGUI. The goal of this project is to deepen my knowledge of C++ beyond using Unreal Engine. The game is currently under development and is scheduled for release at the end of September.</h1>
+            </div>
+        </div>
+
+        
+        
+        <div id="classespart" class="grid grid-cols-1 md:grid-cols-1 gap-4">
+            
+            <div class="flex items-center justify-center p-4 rounded-lg">
+                <video autoplay muted loop class="max-w-screen-lg h-auto rounded-lg">
+                    <source src="/videos/showcasegameplay.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            
+        </div>
+
+
+        <div class="container mx-auto p-4">
+
+            <!-- Tab Buttons -->
+            <div class="flex justify-center space-x-4 mb-4 w-[55%] mx-auto p-4 rounded-lg">
+                <button class="tab-button button-font" data-target="content1">Transform.h</button>
+                <button class="tab-button button-font" data-target="content6">Physicsbody.cpp</button>
+                <button class="tab-button button-font" data-target="content2">Physicsbody.h</button>
+            </div>
+    
+            <!-- Tab Content -->
+            
+            <div id="content1" class="tab-content">
+                <div class="w-full mx-auto  p-4 rounded-lg">
+                    <pre><code id="transform" class="C++">Loading...</code></pre>
+                </div>
+            </div>
+            
+            <div id="content2" class="tab-content">
+                <div class="w-full mx-auto p-4 rounded-lg">
+                    <pre><code id="physicsbody" class="C++">Loading..</code></pre>
+                </div>
+            </div>
+
+            <div id="content6" class="tab-content">
+                <div class="w-full mx-auto p-4 rounded-lg">
+                    <pre><code id="physicsbodyh" class="C++">Loading..</code></pre>
+                </div>
+            </div>
+            
+        </div>
+
+        <!-- SECOND AREA -->
+        <div id="code" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+            <div id="movementpart" class="flex flex-col items-center justify-center p-4 rounded-lg">
+                <video autoplay muted loop class="max-w-screen-m h-auto rounded-lg">
+                    <source src="/videos/movement.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="text-sm text-center mt-2 primary-font">In addition to simple movement the player also has the ability to dash.</p>
+            </div>
+
+            <div class="flex flex-col justify-center p-4 rounded-lg">
+                <h1 class="header-font !text-4xl items-center">Player Movement</h1>
+                <h1 class="primary-font items-center mb-8">One of my primary goals for this project was to create a simple physics system and develop an enjoyable player controller. I added dampening that changes based on if the player is grounded, similar to friction.</h1>
+                <h1 class="primary-font items-center">The dash was programmed to be velocity-direction-based in order to give the player as much control over their character as possible.</h1>
+            </div>
+
+        </div>
+
+        <div class="container mx-auto p-4">
+
+            <!-- Tab Buttons -->
+            <div class="flex space-x-4 mb-4 w-[55%] mx-auto p-4 rounded-lg">
+                <button class="tab-button button-font" data-target="content4">Player.h</button>
+                <button class="tab-button button-font" data-target="content7">Player.cpp</button>
+            </div>
+    
+            <!-- Tab Content -->
+            
+            <div id="content4" class="tab-content">
+                <div class="w-full mx-auto  p-4 rounded-lg">
+                    <pre><code id="movement" class="C++">Loading...</code></pre>
+                </div>
+            </div>
+
+            <div id="content7" class="tab-content">
+                <div class="w-full mx-auto  p-4 rounded-lg">
+                    <pre><code id="movementh" class="C++">Loading...</code></pre>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Third AREA -->
+        <div id="code" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+            <div id="trailspart" class="flex flex-col items-center justify-center p-4 rounded-lg">
+                <video autoplay muted loop class="max-w-screen-m h-auto rounded-lg">
+                    <source src="/videos/trails.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="text-sm text-center mt-2 primary-font">Trail component being showcased on enemies.</p>
+            </div>
+
+            <div class="flex flex-col justify-center p-4 rounded-lg">
+                <h1 class="header-font !text-4xl items-center">Trail System</h1>
+                <h1 class="primary-font items-center">The trail system pushes new vertex points to the trail mesh and then updates it. By taking their position in the list and using that position togheter with an easing function we can determine a y position offset that makes the trail pointy.</h1>
+            </div>
+        
+        </div>
+
+        <div class="container mx-auto p-4">
+
+            <!-- Tab Buttons -->
+            <div class="flex space-x-4 mb-4 w-[55%] mx-auto p-4 rounded-lg">
+                <button class="tab-button button-font" data-target="content5">TrailMesh.cpp</button>
+            </div>
+    
+            <!-- Tab Content -->
+            
+            <div id="content5" class="tab-content">
+                <div class="w-full mx-auto  p-4 rounded-lg">
+                    <pre><code id="trail" class="C++">Loading...</code></pre>
+                </div>
+            </div>
+
+        </div>
+        
+        <div id="code" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+            <div class="flex flex-col justify-center p-4 rounded-lg">
+                <h1 class="header-font !text-4xl items-center">Game Class</h1>
+                <h1 class="primary-font items-center">The Game class is responsible for managing all the entitys currently in memory, updating and rendering them, and spawning new entitys. Its also handles collisions detection between entitys using AABB checks.</h1>
+            </div>
+        
+            <div class="flex flex-col items-center justify-center p-4 rounded-lg">
+                <video autoplay muted loop class="max-w-screen-m h-auto rounded-lg">
+                    <source src="/videos/spawning.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="text-sm text-center mt-2 primary-font">Entitys spawning.</p>
+            </div>
+
+        </div>
+
+        <div id="gamepart" class="container mx-auto p-4">
+
+            <!-- Tab Buttons -->
+            <div class="flex justify-center space-x-4 mb-4 w-[55%] mx-auto p-4 rounded-lg">
+                <button class="tab-button button-font" data-target="content8">Game.cpp</button>
+                <button class="tab-button button-font" data-target="content9">Game.h</button>
+            </div>
+    
+            <!-- Tab Content -->
+            
+            <div id="content8" class="tab-content">
+                <div class="w-full mx-auto  p-4 rounded-lg">
+                    <pre><code id="game" class="C++">Loading...</code></pre>
+                </div>
+            </div>
+            
+            <div id="content9" class="tab-content">
+                <div class="w-full mx-auto p-4 rounded-lg">
+                    <pre><code id="gameh" class="C++">Loading..</code></pre>
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="flex justify-center mt-8">
+            <button onclick="scrollToTop()" class="bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-700">Top</button>
+        </div>
+        
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/cpp.min.js"></script>
+    <script>
+    // Function to handle tab switching with toggle behavior
+    function switchTab(targetId) {
+    const targetElement = document.getElementById(targetId);
+    const isActive = targetElement.classList.contains('active');
+
+    // Hide all tab content if the clicked tab is not active
+    if (!isActive) {
+        document.querySelectorAll('.tab-content').forEach(content => {
+            content.classList.remove('active');
+        });
+
+        // Remove active class from all buttons
+        document.querySelectorAll('.tab-button').forEach(button => {
+        button.classList.remove('bg-blue-500', 'text-white');
+        button.classList.add('bg-gray-300', 'text-gray-800');
+    });
+
+        // Show the selected tab content
+        targetElement.classList.add('active');
+
+        // Highlight the selected tab button
+        document.querySelector(`.tab-button[data-target="${targetId}"]`).classList.add('bg-blue-500', 'text-white');
+        document.querySelector(`.tab-button[data-target="${targetId}"]`).classList.remove('bg-gray-300', 'text-gray-800');
+    } else {
+        // If the clicked tab is active, hide it
+        targetElement.classList.remove('active');
+        document.querySelector(`.tab-button[data-target="${targetId}"]`).classList.remove('bg-blue-500', 'text-white');
+        document.querySelector(`.tab-button[data-target="${targetId}"]`).classList.add('bg-gray-300', 'text-gray-800');
+    }
+    }
+
+   // Event listeners for tab buttons
+    document.querySelectorAll('.tab-button').forEach(button => {
+        button.addEventListener('click', () => switchTab(button.getAttribute('data-target')));
+    });
+
+    // Ensure no tabs are active initially
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.remove('active');
+    });
+
+    document.querySelectorAll('.tab-button').forEach(button => {
+            button.classList.add('bg-gray-300', 'text-gray-800');
+        });
+    });
+
+        function updateCodeContent() {
+            fetch('/json/xyz.json')
+                .then(response => response.json())
+                .then(data => {
+                    // Update code snippets
+                    if (data.transform) {
+                        const codeElement1 = document.getElementById('transform');
+                        codeElement1.textContent = data.transform;
+                        hljs.highlightElement(codeElement1);
+                    }
+                    if (data.physicsbody) {
+                        const codeElement2 = document.getElementById('physicsbody');
+                        codeElement2.textContent = data.physicsbody;
+                        hljs.highlightElement(codeElement2);
+                    }
+                    if (data.movement) {
+                        const codeElement4 = document.getElementById('movement');
+                        codeElement4.textContent = data.movement;
+                        hljs.highlightElement(codeElement4); 
+                    }
+                    if (data.trail) {
+                        const codeElement5 = document.getElementById('trail');
+                        codeElement5.textContent = data.trail;
+                        hljs.highlightElement(codeElement5);
+                    }
+                    if (data.physicsbodyh) {
+                        const codeElement6 = document.getElementById('physicsbodyh');
+                        codeElement6.textContent = data.physicsbodyh;
+                        hljs.highlightElement(codeElement6);
+                    }
+                    if (data.movementh) {
+                        const codeElement7 = document.getElementById('movementh');
+                        codeElement7.textContent = data.movementh;
+                        hljs.highlightElement(codeElement7);
+                    }
+                    if (data.game) {
+                        const codeElement8 = document.getElementById('game');
+                        codeElement8.textContent = data.game;
+                        hljs.highlightElement(codeElement8);
+                    }
+                    if (data.gameh) {
+                        const codeElement9 = document.getElementById('gameh');
+                        codeElement9.textContent = data.gameh;
+                        hljs.highlightElement(codeElement9);
+                    }
+                })
+                .catch(error => console.error('Error fetching JSON:', error));
+        }
+
+        // Call the function to update the content and highlight
+        updateCodeContent();
+
+        // Optionally, initialize with the first tab active
+        switchTab('content1');
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
