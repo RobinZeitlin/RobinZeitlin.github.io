@@ -35,10 +35,9 @@
             <div class="space-x-4">
                 <a class="navigation-slot primary-font !cursor-pointer" onclick="window.location.href='/index.html';">HomePage</a>
                 <a href="#video-section" class="navigation-slot primary-font">Video</a>
-                <a href="#classespart" class="navigation-slot primary-font">Classes</a>
-                <a href="#movementpart" class="navigation-slot primary-font">Movement</a>
-                <a href="#trailspart" class="navigation-slot primary-font">Trail System</a>
-                <a href="#gamepart" class="navigation-slot primary-font">Game Class</a>
+                <a href="#boomerangpart" class="navigation-slot primary-font">Boomerang</a>
+                <a href="#particlepart" class="navigation-slot primary-font">Particle System</a>
+                <a href="#editorpart" class="navigation-slot primary-font">Level Editor</a>
             </div>
 
         </div>
@@ -55,55 +54,45 @@
                 <h1 class="primary-font !text-6xl">Unnamed</h1>
                 <h1 class="primary-font !text-4xl !font-thin !text-amber-200">C++ / SDL2</h1>
                 <h1 class="primary-font !text-2xl !font-thin">👥 1</h1> 
-                <h1 class="primary-font !text-2xl !font-thin">📅 ? month</h1>
+                <h1 class="primary-font !text-2xl !font-thin">📅 Ongoing</h1>
                 <a href="https://github.com/RobinZeitlin/SDL2" target="_blank" class="text-blue-500 hover:underline !text-2xl">
                     Github
                 </a>
             </div>
 
              <div class="items-center justify-center p-4 rounded-lg">
-                <h1 class="primary-font">The Engine was built for this project specifically. I implemented several gameplay features, including AABB collision detection, physics, and UI using ImGUI. The goal of this project is to deepen my knowledge of C++ beyond using Unreal Engine. The game is currently under development and is scheduled for release at the end of September.</h1>
+                <h1 class="primary-font">The Engine used for this project is specifically buildt for this project. But could be abstracted for further use. The project started of as hobby project but due to collaboration interest from designers who wanted to work on level building, I decided to develop a small sized Editor UI for the project.</h1>
             </div>
         </div>
 
         
         
-        <div id="classespart" class="grid grid-cols-1 md:grid-cols-1 gap-4">
+        <div id="boomerangpart" class="grid grid-cols-1 md:grid-cols-1 gap-4">
             
             <div class="flex items-center justify-center p-4 rounded-lg">
-                <video autoplay muted loop class="max-w-screen-lg h-auto rounded-lg">
-                    <source src="/videos/showcasegameplay.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <img src="/img/showcasePassionProject.gif" alt="Bouncing boomerang visualized with line drawing" class="max-w-screen-m h-auto rounded-lg" />
             </div>
             
         </div>
 
 
         <div class="container mx-auto p-4">
-
-            <!-- Tab Buttons -->
-            <div class="flex justify-center space-x-4 mb-4 w-[55%] mx-auto p-4 rounded-lg">
-                <button class="tab-button button-font" data-target="content1">Transform.h</button>
-                <button class="tab-button button-font" data-target="content6">Physicsbody.cpp</button>
-                <button class="tab-button button-font" data-target="content2">Physicsbody.h</button>
-            </div>
     
             <!-- Tab Content -->
             
-            <div id="content1" class="tab-content">
+            <div id="" class="tab-content">
                 <div class="w-full mx-auto  p-4 rounded-lg">
                     <pre><code id="transform" class="C++">Loading...</code></pre>
                 </div>
             </div>
             
-            <div id="content2" class="tab-content">
+            <div id="" class="tab-content">
                 <div class="w-full mx-auto p-4 rounded-lg">
                     <pre><code id="physicsbody" class="C++">Loading..</code></pre>
                 </div>
             </div>
 
-            <div id="content6" class="tab-content">
+            <div id="" class="tab-content">
                 <div class="w-full mx-auto p-4 rounded-lg">
                     <pre><code id="physicsbodyh" class="C++">Loading..</code></pre>
                 </div>
@@ -114,18 +103,15 @@
         <!-- SECOND AREA -->
         <div id="code" class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-            <div id="movementpart" class="flex flex-col items-center justify-center p-4 rounded-lg">
-                <video autoplay muted loop class="max-w-screen-m h-auto rounded-lg">
-                    <source src="/videos/movement.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p class="text-sm text-center mt-2 primary-font">In addition to simple movement the player also has the ability to dash.</p>
+            <div id="boomerangpart" class="flex flex-col items-center justify-center p-4 rounded-lg">
+                <img src="/img/boomerangBouncingShowcase.gif" alt="Bouncing boomerang visualized with line drawing" class="max-w-screen-m h-auto rounded-lg" />
+                <p class="text-sm text-center mt-2 primary-font">Bouncing boomerang visualised with line drawing.</p>
             </div>
 
             <div class="flex flex-col justify-center p-4 rounded-lg">
-                <h1 class="header-font !text-4xl items-center">Player Movement</h1>
-                <h1 class="primary-font items-center mb-8">One of my primary goals for this project was to create a simple physics system and develop an enjoyable player controller. I added dampening that changes based on if the player is grounded, similar to friction.</h1>
-                <h1 class="primary-font items-center">The dash was programmed to be velocity-direction-based in order to give the player as much control over their character as possible.</h1>
+                <h1 class="header-font !text-4xl items-center">Boomerang</h1>
+                <h1 class="primary-font items-center mb-8">The Boomerang utilizes a reflection formula to determine which way to bounce after coliding with a surface.</h1>
+                <h1 class="primary-font items-center">The visualisation works using the same formula but instead of checking the boomerangs operlapping, it instead uses a "LineTrace" that returns the neccessarry information, that is then used to draw the debug lines.</h1>
             </div>
 
         </div>
@@ -134,21 +120,21 @@
 
             <!-- Tab Buttons -->
             <div class="flex space-x-4 mb-4 w-[55%] mx-auto p-4 rounded-lg">
-                <button class="tab-button button-font" data-target="content4">Player.h</button>
-                <button class="tab-button button-font" data-target="content7">Player.cpp</button>
+                <button class="tab-button button-font" data-target="content1">Boomerang.h</button>
+                <button class="tab-button button-font" data-target="content2">Boomerang.cpp</button>
             </div>
     
             <!-- Tab Content -->
             
-            <div id="content4" class="tab-content">
+            <div id="content1" class="tab-content">
                 <div class="w-full mx-auto  p-4 rounded-lg">
-                    <pre><code id="movement" class="C++">Loading...</code></pre>
+                    <pre><code id="boomerangh" class="C++">Loading...</code></pre>
                 </div>
             </div>
 
-            <div id="content7" class="tab-content">
+            <div id="content2" class="tab-content">
                 <div class="w-full mx-auto  p-4 rounded-lg">
-                    <pre><code id="movementh" class="C++">Loading...</code></pre>
+                    <pre><code id="boomerang" class="C++">Loading...</code></pre>
                 </div>
             </div>
 
@@ -157,17 +143,15 @@
         <!-- Third AREA -->
         <div id="code" class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-            <div id="trailspart" class="flex flex-col items-center justify-center p-4 rounded-lg">
-                <video autoplay muted loop class="max-w-screen-m h-auto rounded-lg">
-                    <source src="/videos/trails.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p class="text-sm text-center mt-2 primary-font">Trail component being showcased on enemies.</p>
+            <div id="particlepart" class="flex flex-col items-center justify-center p-4 rounded-lg">
+                <img src="/img/thirdIterationParticleSystemShowcase.gif" alt="Bouncing boomerang visualized with line drawing" class="max-w-screen-m h-auto rounded-lg" />
+                <p class="text-sm text-center mt-2 primary-font">Gif showcases two particle systems being spawned ontop of eachother.</p>
             </div>
 
             <div class="flex flex-col justify-center p-4 rounded-lg">
-                <h1 class="header-font !text-4xl items-center">Trail System</h1>
-                <h1 class="primary-font items-center">The trail system pushes new vertex points to the trail mesh and then updates it. By taking their position in the list and using that position togheter with an easing function we can determine a y position offset that makes the trail pointy.</h1>
+                <h1 class="header-font !text-4xl items-center">Particle System</h1>
+                <h1 class="primary-font items-center mb-8">Spawns multiple particles, gives them random offsets and scales them based on a "Bouncing" cubic easing function.</h1>
+                <h1 class="primary-font items-center">The particle updating and rendering is completely seperated from the actor class to make it as lightweight as possible.</h1>
             </div>
         
         </div>
@@ -176,14 +160,35 @@
 
             <!-- Tab Buttons -->
             <div class="flex space-x-4 mb-4 w-[55%] mx-auto p-4 rounded-lg">
-                <button class="tab-button button-font" data-target="content5">TrailMesh.cpp</button>
+                <button class="tab-button button-font" data-target="content3">ParticleController.h</button>
+                <button class="tab-button button-font" data-target="content4">ParticleController.cpp</button>
+                <button class="tab-button button-font" data-target="content5">Particle.h</button>
+                <button class="tab-button button-font" data-target="content6">Particle.cpp</button>
             </div>
     
             <!-- Tab Content -->
             
+            <div id="content3" class="tab-content">
+                <div class="w-full mx-auto  p-4 rounded-lg">
+                    <pre><code id="particlecontrollerh" class="C++">Loading...</code></pre>
+                </div>
+            </div>
+
+            <div id="content4" class="tab-content">
+                <div class="w-full mx-auto  p-4 rounded-lg">
+                    <pre><code id="particlecontroller" class="C++">Loading...</code></pre>
+                </div>
+            </div>
+
             <div id="content5" class="tab-content">
                 <div class="w-full mx-auto  p-4 rounded-lg">
-                    <pre><code id="trail" class="C++">Loading...</code></pre>
+                    <pre><code id="particleh" class="C++">Loading...</code></pre>
+                </div>
+            </div>
+
+            <div id="content6" class="tab-content">
+                <div class="w-full mx-auto  p-4 rounded-lg">
+                    <pre><code id="particle" class="C++">Loading...</code></pre>
                 </div>
             </div>
 
@@ -191,27 +196,25 @@
         
         <div id="code" class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
-            <div class="flex flex-col justify-center p-4 rounded-lg">
-                <h1 class="header-font !text-4xl items-center">Game Class</h1>
-                <h1 class="primary-font items-center">The Game class is responsible for managing all the entitys currently in memory, updating and rendering them, and spawning new entitys. Its also handles collisions detection between entitys using AABB checks.</h1>
+            <div id="editorpart" class="flex flex-col justify-center p-4 rounded-lg">
+                <h1 class="header-font !text-4xl items-center">Level Editor</h1>
+                <h1 class="primary-font items-center">The level editor has a toggleable background grid, the ability to save and load levels from .csv files, select and place different actors such as enemies and blocks, I am currently developing a spline system that will work as an attachment rail for the camera.</h1>
             </div>
         
             <div class="flex flex-col items-center justify-center p-4 rounded-lg">
                 <video autoplay muted loop class="max-w-screen-m h-auto rounded-lg">
-                    <source src="/videos/spawning.mp4" type="video/mp4">
+                    <source src="/videos/showacseEditor.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <p class="text-sm text-center mt-2 primary-font">Entitys spawning.</p>
+                <p class="text-sm text-center mt-2 primary-font">Level editor.</p>
             </div>
 
         </div>
 
-        <div id="gamepart" class="container mx-auto p-4">
+        <div id="" class="container mx-auto p-4">
 
             <!-- Tab Buttons -->
             <div class="flex justify-center space-x-4 mb-4 w-[55%] mx-auto p-4 rounded-lg">
-                <button class="tab-button button-font" data-target="content8">Game.cpp</button>
-                <button class="tab-button button-font" data-target="content9">Game.h</button>
             </div>
     
             <!-- Tab Content -->
@@ -286,38 +289,38 @@
     });
 
         function updateCodeContent() {
-            fetch('/json/xyz.json')
+            fetch('/json/unnamed.json')
                 .then(response => response.json())
                 .then(data => {
                     // Update code snippets
-                    if (data.transform) {
-                        const codeElement1 = document.getElementById('transform');
-                        codeElement1.textContent = data.transform;
+                    if (data.boomerangh) {
+                        const codeElement1 = document.getElementById('boomerangh');
+                        codeElement1.textContent = data.boomerangh;
                         hljs.highlightElement(codeElement1);
                     }
-                    if (data.physicsbody) {
-                        const codeElement2 = document.getElementById('physicsbody');
-                        codeElement2.textContent = data.physicsbody;
+                    if (data.boomerang) {
+                        const codeElement2 = document.getElementById('boomerang');
+                        codeElement2.textContent = data.boomerang;
                         hljs.highlightElement(codeElement2);
                     }
-                    if (data.movement) {
-                        const codeElement4 = document.getElementById('movement');
-                        codeElement4.textContent = data.movement;
+                    if (data.particlecontrollerh) {
+                        const codeElement4 = document.getElementById('particlecontrollerh');
+                        codeElement4.textContent = data.particlecontrollerh;
                         hljs.highlightElement(codeElement4); 
                     }
-                    if (data.trail) {
-                        const codeElement5 = document.getElementById('trail');
-                        codeElement5.textContent = data.trail;
+                    if (data.particlecontroller) {
+                        const codeElement5 = document.getElementById('particlecontroller');
+                        codeElement5.textContent = data.particlecontroller;
                         hljs.highlightElement(codeElement5);
                     }
-                    if (data.physicsbodyh) {
-                        const codeElement6 = document.getElementById('physicsbodyh');
-                        codeElement6.textContent = data.physicsbodyh;
+                    if (data.particleh) {
+                        const codeElement6 = document.getElementById('particleh');
+                        codeElement6.textContent = data.particleh;
                         hljs.highlightElement(codeElement6);
                     }
-                    if (data.movementh) {
-                        const codeElement7 = document.getElementById('movementh');
-                        codeElement7.textContent = data.movementh;
+                    if (data.particle) {
+                        const codeElement7 = document.getElementById('particle');
+                        codeElement7.textContent = data.particle;
                         hljs.highlightElement(codeElement7);
                     }
                     if (data.game) {
@@ -334,11 +337,7 @@
                 .catch(error => console.error('Error fetching JSON:', error));
         }
 
-        // Call the function to update the content and highlight
         updateCodeContent();
-
-        // Optionally, initialize with the first tab active
-        switchTab('content1');
 
         function scrollToTop() {
             window.scrollTo({ top: 0, behavior: 'smooth' });
