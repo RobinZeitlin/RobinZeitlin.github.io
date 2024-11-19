@@ -38,6 +38,7 @@
                 <a href="#boomerangpart" class="navigation-slot primary-font">Boomerang</a>
                 <a href="#particlepart" class="navigation-slot primary-font">Particle System</a>
                 <a href="#editorpart" class="navigation-slot primary-font">Level Editor</a>
+                <a href="#spline" class="navigation-slot primary-font">Spline</a>
             </div>
 
         </div>
@@ -231,6 +232,24 @@
                 </div>
             </div>
             
+        </div>
+
+        <div id="spline" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+            <div id="movementpart" class="flex flex-col items-center justify-center p-4 rounded-lg">
+                <video autoplay muted loop class="max-w-screen-m h-auto rounded-lg">
+                    <source src="/videos/splinetool.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="text-sm text-center mt-2 primary-font">Spline tool showcase.</p>
+            </div>
+
+            <div class="flex flex-col justify-center p-4 rounded-lg">
+                <h1 class="header-font !text-4xl items-center">Spline Tool</h1>
+                <h1 class="primary-font items-center mb-8">The Spline is being used as a camera rail which the user sets up when building their level. If the player gets within a certain radius the camera attaches to the rail.</h1>
+                <p class="primary-font mb-6">It visualizes curves and points along the path, a "get_closest_point_on_spline" function calculates the nearest point on the spline based on a given position. The spline could easily be repurposed for different use cases if wanted. </p>
+            </div>
+        
         </div>
 
         <div class="flex justify-center mt-8">
