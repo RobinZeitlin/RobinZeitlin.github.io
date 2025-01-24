@@ -249,7 +249,37 @@
                 <h1 class="primary-font items-center mb-8">The Spline is being used as a camera rail which the user sets up when building their level. If the player gets within a certain radius the camera attaches to the rail.</h1>
                 <p class="primary-font mb-6">It visualizes curves and points along the path, a "get_closest_point_on_spline" function calculates the nearest point on the spline based on a given position. The spline could easily be repurposed for different use cases if wanted. </p>
             </div>
+        </div>
+
+        <div class="flex space-x-4 mb-4 w-[55%] mx-auto p-4 rounded-lg">
+            <button class="tab-button button-font" data-target="content11">Spline.h</button>
+            <button class="tab-button button-font" data-target="content10">Spline.cpp</button>
+            <button class="tab-button button-font" data-target="content13">SplinePoint.h</button>
+            <button class="tab-button button-font" data-target="content12">SplinePoint.cpp</button>
+        </div>
+
+        <div id="content10" class="tab-content">
+            <div class="w-full mx-auto p-4 rounded-lg">
+                <pre><code id="splinecpp" class="C++">Loading...</code></pre>
+            </div>
+        </div>
         
+        <div id="content11" class="tab-content">
+            <div class="w-full mx-auto p-4 rounded-lg">
+                <pre><code id="splineh" class="C++">Loading...</code></pre>
+            </div>
+        </div>
+        
+        <div id="content12" class="tab-content">
+            <div class="w-full mx-auto p-4 rounded-lg">
+                <pre><code id="splinepointcpp" class="C++">Loading...</code></pre>
+            </div>
+        </div>
+        
+        <div id="content13" class="tab-content">
+            <div class="w-full mx-auto p-4 rounded-lg">
+                <pre><code id="splinepointh" class="C++">Loading...</code></pre>
+            </div>
         </div>
 
         <div class="flex justify-center mt-8">
@@ -351,6 +381,26 @@
                         const codeElement9 = document.getElementById('gameh');
                         codeElement9.textContent = data.gameh;
                         hljs.highlightElement(codeElement9);
+                    }
+                    if (data.splinecpp) {
+                        const codeElement10 = document.getElementById('splinecpp');
+                        codeElement10.textContent = data.splinecpp;
+                        hljs.highlightElement(codeElement10);
+                    }
+                    if (data.splineh) {
+                        const codeElement11 = document.getElementById('splineh');
+                        codeElement11.textContent = data.splineh;
+                        hljs.highlightElement(codeElement11);
+                    }
+                    if (data.splinepointcpp) {
+                        const codeElement12 = document.getElementById('splinepointcpp');
+                        codeElement12.textContent = data.splinepointcpp;
+                        hljs.highlightElement(codeElement12);
+                    }
+                    if (data.splinepointh) {
+                        const codeElement13 = document.getElementById('splinepointh');
+                        codeElement13.textContent = data.splinepointh;
+                        hljs.highlightElement(codeElement13);
                     }
                 })
                 .catch(error => console.error('Error fetching JSON:', error));
