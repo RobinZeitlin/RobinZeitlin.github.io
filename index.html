@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Robin Zeitlin | HomePage</title>
-        <link rel="stylesheet" href="/src/output.css">
+        <link rel="stylesheet" href="/dist/output.css">
     </head>
     <body class="box-border">
 
@@ -75,7 +75,7 @@
 
             <div class="bg-black bg-opacity-0 grid grid-cols-1 md:grid-cols-2 items-center">
                 <!-- Left Column (for image or other content) -->
-                <div class="p-4">
+                <div class="p-1">
                     <img src="/img/Portrait.jpg" alt="About Me" class="portrait">
                 </div>
         
@@ -109,5 +109,40 @@
                 </div>
             </div>
         </div>
+
+        <div class="showcase-container" style="margin-top: 5rem;">
+
+            <!-- Section 1-->
+            <div class="section" style="background-image: url('img/voxelWorldGeneration.gif');">
+                <div class="bg-black bg-opacity-0 h-full flex flex-col items-center justify-center mt-2">
+                    <h2 class="upper-left-text !text-4xl">Voxel World Chunk Generation</h2>
+                    <h2 class="lower-upper-left-text !text-4xl">C++ / OpenGL</h2>
+                </div>
+            </div>
+
+            <!-- Section 2-->
+            <div class="section" style="background-image: url('../img/BubbleDome.gif');" onclick="window.location.href='dist/Unnamed.html';">
+                <div class="bg-black bg-opacity-0 h-full flex flex-col items-center justify-center mt-2">
+                    <h2 class="upper-left-text !text-4xl">GGJ 2025 "BubbleDome" </h2>
+                    <h2 class="lower-upper-left-text !text-4xl">C# / Unity</h2>
+                </div>
+            </div>
+
+            <!-- Section 3-->
+            <div class="section" style="background-image: url('../img/showcasePassionProject.gif');" onclick="window.location.href='dist/Unnamed.html';">
+                <div class="bg-black bg-opacity-0 h-full flex flex-col items-center justify-center mt-2">
+                    <h2 class="upper-left-text !text-6xl">Boom'n'Rang </h2>
+                    <h2 class="lower-upper-left-text !text-4xl">C++ / SDL2</h2>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer Section -->
+        <footer class="section-information mt-12">
+            <div class="bg-black bg-opacity-0 grid grid-cols-1 md:grid-cols-2 items-center">
+            </div>
+        </footer>
+
     </body>
 </html>
