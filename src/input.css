@@ -65,9 +65,26 @@ body {
     }
 }
 
+.lower-bottom-right-text {
+    @apply primary-font absolute right-0 bottom-4 m-4 flex items-center space-x-2;
+}
+
 .section
 {
     @apply w-full h-96 bg-cover bg-center my-4 bg-center transform transition-transform duration-300 hover:scale-95 rounded-lg cursor-pointer;
+}
+
+.side_section {
+    @apply w-full h-96 bg-cover bg-center my-4 transform transition-transform duration-300 hover:scale-99 rounded-lg cursor-pointer relative;
+}
+
+.side_section::before {
+    content: '';
+    @apply absolute inset-0 bg-black opacity-0 transition-opacity duration-300 rounded-lg;
+}
+
+.side_section:hover::before {
+    @apply opacity-75;
 }
 
 .upper-left-text
@@ -80,9 +97,22 @@ body {
     @apply primary-font absolute left-0 m-4 top-16 font-light !text-amber-200;
 }
 
+.side-project-text {
+    @apply primary-font absolute left-0 m-4 top-28 font-light !text-amber-200 opacity-0 transition-opacity duration-300;
+}
+
+.side_section:hover .side-project-text {
+    @apply opacity-100;
+}
+
+.lower-bottom-left-text {
+    @apply primary-font absolute left-0 bottom-4 m-4 font-light !text-amber-200;
+}
+
+
 .section-information
 {
-    @apply w-full h-full bg-cover bg-center scroll-mb-3 bg-primary py-40 drop-shadow-xl;
+    @apply w-full h-full bg-cover bg-center scroll-mb-3 bg-primary py-20 drop-shadow-xl;
 }
 
 .portrait
@@ -99,3 +129,8 @@ body {
 .tab-button {
     @apply px-6 py-3 rounded-lg focus:outline-none ;
 }
+
+.tab-button {
+    @apply px-6 py-3 rounded-lg focus:outline-none hover:bg-black hover:text-white transition-all duration-200;
+}
+
