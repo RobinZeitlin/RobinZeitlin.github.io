@@ -72,14 +72,10 @@
         </div>
     </nav>
 
-    <div id="classespart" class="grid grid-cols-1 md:grid-cols-1 gap-4"> 
-        <div class="flex items-center justify-center p-4 rounded-lg">
-            <video autoplay muted loop class="max-w-screen-lg h-auto rounded-lg">
-                <source src="/videos/showcasexyz.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+    <div class="flex flex-col items-center justify-center p-4 rounded-lg overflow-hidden">
+        <img src="/img/worldgenthinshowcase.gif" alt="Entitys spawning" class="object-cover object-center w-1/2 h-auto rounded-lg">
     </div>
+    
 
     <div class="container mx-auto p-4">
 
@@ -89,58 +85,44 @@
                 <h1 class="primary-font !text-4xl !font-thin !text-amber-200">C++ / OpenGL</h1>
                 <h1 class="primary-font !text-2xl !font-thin">👥 1</h1> 
                 <h1 class="primary-font !text-2xl !font-thin">📅 2 Weeks</h1>
-                <a href="https://github.com/proxima-k/FPSOpenGL" target="_blank" class="text-blue-500 hover:underline !text-2xl">
+                <a href="https://github.com/RobinZeitlin/VoxelWorldGeneration" target="_blank" class="text-blue-500 hover:underline !text-2xl">
                     Github
                 </a>
             </div>
 
              <div class="items-center justify-center p-4 rounded-lg">
-                <h1 class="primary-font">The Engine was built for this project specifically. I implemented several gameplay features, including AABB collision detection, physics, a particle system, and UI using ImGUI. The goal of this project is to deepen my knowledge of C++ beyond using Unreal Engine.</h1>
+                <h1 class="primary-font">The Engine was built for this project specifically. For this project I used what I've learnt the past months and focused on the projects architecture, and also som fun optimisation solutions. This was done through seperation of project solutions, and Backface Culling. This is my current ongoing project.</h1>
             </div>
         </div>
-        
+
         <div id="code" class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
             <div class="flex flex-col justify-center p-4 rounded-lg">
-                <h1 class="header-font !text-4xl items-center">Game Class</h1>
-                <h1 class="primary-font items-center">The Game class is responsible for managing all the entitys currently in memory, updating and rendering them, and spawning new entitys. Its also handles collisions detection between entitys using AABB checks.</h1>
-            </div>
-        
-            <div class="flex flex-col items-center justify-center p-4 rounded-lg">
-                <video autoplay muted loop class="max-w-screen-m h-auto rounded-lg">
-                    <source src="/videos/showcasespawning.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p class="text-sm text-center mt-2 primary-font">Entitys spawning.</p>
+                <h1 class="header-font !text-4xl items-center">Backface Culling</h1>
+                <h1 class="primary-font items-center">It calls an addVoxel function for each tile while generating the grid. This function checks the height based on a perlin noise, it then checks this height compared to its neighbours. Depending on the neighbours height difference it removes and adds quads to the voxels.</h1>
             </div>
 
-        </div>
-
-        
-        <div id="gamepart" class="container mx-auto p-4">
-
-            <!-- Tab Buttons -->
-            <div class="flex justify-center space-x-4 mb-4 w-[55%] mx-auto p-4 rounded-lg">
-                <button class="tab-button button-font" data-target="content8">Game.cpp</button>
-                <button class="tab-button button-font" data-target="content9">Game.h</button>
-            </div>
-    
-            <!-- Tab Content -->
-            
-            <div id="content8" class="tab-content">
-                <div class="w-full mx-auto  p-4 rounded-lg">
-                    <pre><code id="game" class="C++">Loading...</code></pre>
-                </div>
-            </div>
-            
-            <div id="content9" class="tab-content">
-                <div class="w-full mx-auto p-4 rounded-lg">
-                    <pre><code id="gameh" class="C++">Loading..</code></pre>
-                </div>
+            <div class="flex flex-col items-center justify-center p-4 rounded-lg overflow-hidden">
+                <img src="/img/backfaceculling.gif" alt="Entitys spawning" class="object-cover object-center w-1/2 h-auto rounded-lg">
             </div>
             
         </div>
+
+        <div id="code" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+            <div class="flex flex-col items-center justify-center p-4 rounded-lg overflow-hidden">
+                <img src="/img/architectureShowcase.png" alt="Entitys spawning" class="object-cover object-center w-1/2 h-auto rounded-lg">
+            </div>
+
+            <div class="flex flex-col justify-center p-4 rounded-lg">
+                <h1 class="header-font !text-4xl items-center">Architectural Structure</h1>
+                <h1 class="primary-font items-center">The project uses two project solutions. One solution for the general game engine logic, while the other one strictly handles the actual rendering part of the project.</h1>
+            </div>
+            
+        </div>
+
     </div>
+    
 
     <!-- Footer Section -->
     <footer class="section-information mt-12">
