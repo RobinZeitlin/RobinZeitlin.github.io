@@ -38,6 +38,10 @@
                         </svg>
                     </a>
 
+                    <a href="https://store.steampowered.com/developer/robinz" class="navigation-image">
+                        <img src="/img/steamicon.png" alt="GitHub Icon" class="navigation-image">
+                    </a>
+
                 </div>
                 <div class="space-x-4">
                     <a href="#home" class="navigation-slot primary-font">Main Projects</a>
@@ -54,7 +58,7 @@
         <div class="selection-container" style="margin-top: 5rem;">
 
             <!-- Section 1-->
-            <div class="section" style="background-image: url('img/frontpagexyz.gif');" onclick="window.location.href='dist/xyz.html';">
+            <div class="side_section" style="background-image: url('img/frontpagexyz.gif');" onclick="window.location.href='dist/xyz.html';">
                 <div class="bg-black bg-opacity-0 h-full flex flex-col items-center justify-center mt-2">
                     <h2 class="upper-left-text !text-6xl">(xyz)⁰ </h2>
                     <h2 class="lower-upper-left-text !text-4xl">C++ / OpenGL</h2>
@@ -62,7 +66,7 @@
             </div>
 
             <!-- Section 2-->
-            <div class="section" style="background-image: url('../img/showcasePassionProject.gif');" onclick="window.location.href='dist/Unnamed.html';">
+            <div class="side_section" style="background-image: url('../img/showcasePassionProject.gif');" onclick="window.location.href='dist/Unnamed.html';">
                 <div class="bg-black bg-opacity-0 h-full flex flex-col items-center justify-center mt-2">
                     <h2 class="upper-left-text !text-6xl">Boom'n'Rang </h2>
                     <h2 class="lower-upper-left-text !text-4xl">C++ / SDL2</h2>
@@ -70,7 +74,7 @@
             </div>
 
             <!-- Section 3 -->
-            <div class="section" style="background-image: url('../img/reberryonshowcase.gif');" onclick="window.location.href='dist/reberryon.html';">
+            <div class="side_section" style="background-image: url('../img/reberryonshowcase.gif');" onclick="window.location.href='dist/reberryon.html';">
                 <div class="bg-black bg-opacity-0 h-full flex items-center justify-center">
                     <h2 class="upper-left-text !text-6xl">Reberryon</h2>
                     <h2 class="lower-upper-left-text !text-4xl" >C++ / Unreal Engine</h2>
@@ -78,10 +82,11 @@
             </div>
 
             <!-- Section 4 -->
-            <div class="section" style="background-image: url('../img/HonkerFrontPage.gif');" onclick="window.location.href='dist/honker.html';">
+            <div class="side_section" style="background-image: url('../img/worldgenerationshowcase.gif');" onclick="window.location.href='dist/voxelworld.html';">
                 <div class="bg-black bg-opacity-0 h-full flex items-center justify-center">
-                    <h2 class="upper-left-text !text-6xl">Honker ( ECS / DOTS )</h2>
-                    <h2 class="lower-upper-left-text !text-4xl" >C# / Unity</h2>
+                    <h2 class="upper-left-text !text-6xl">Voxel Terrain Generation</h2>
+                    <h2 class="lower-upper-left-text !text-4xl" >C++ / OpenGL</h2>
+
                 </div>
             </div>
         </div>
@@ -89,9 +94,9 @@
         <div id="about-me" class="section-information">
 
             <div class="bg-black bg-opacity-0 grid grid-cols-1 md:grid-cols-2 items-center">
-                <!-- Left Column (for image or other content) -->
+
                 <div class="p-1">
-                    <img src="/img/Portrait.jpg" alt="About Me" class="portrait">
+                    <img src="/img/Portrait.jfif" alt="About Me" class="portrait">
                 </div>
         
                 <div class="p-4 !space-y-12">
@@ -127,11 +132,25 @@
 
         <div id="side-projects" class="showcase-container" style="margin-top: 5rem;">
 
-            <div class="side_section group relative hover:bg-black hover:bg-opacity-50 transition" style="background-image: url('img/voxelWorldGeneration.gif');">
-                <div class="bg-black bg-opacity-0 h-full flex flex-col items-center justify-center mt-2 transition-all">
-                    <h2 class="upper-left-text !text-4xl opacity-100 group-hover:opacity-0">Voxel World Chunk Generation</h2>
-                    <h2 class="lower-upper-left-text !text-4xl opacity-100 group-hover:opacity-0">C++ / OpenGL</h2>
-                    <h2 class="side-project-text !text-4xl opacity-100 group-hover:opacity-0">A solo project focused on optimisation through the implementation of Backface Culling.</h2>
+            <div class="side_section" style="background-image: url('img/splitfiction.jpg');">
+                <div class="bg-black bg-opacity-0 h-full flex flex-col items-center justify-center mt-2">
+                    <h2 class="side-project-text !text-4xl opacity-100 group-hover:opacity-0">As a contractor on this project, I focused on completing UE5 tickets related specifically to volume and collision adjustments provided by QA.</h2>
+                </div>
+            </div>
+
+            <div class="side_section" style="background-image: url('../img/unstableengine.gif');">
+                <div class="bg-black bg-opacity-0 h-full flex flex-col items-center justify-center mt-2">
+                    <h2 class="upper-left-text !text-6xl">Unstable Engine</h2>
+                    <h2 class="lower-upper-left-text !text-4xl">C++ / OpenGL</h2>
+                    <h2 class="side-project-text !text-4xl opacity-100 group-hover:opacity-0">Developed by me as a part of the Engine course during my education at Future Games.</h2>
+                </div>
+            </div>
+
+            <div class="side_section" style="background-image: url('../img/skydeliveryservice.gif');">
+                <div class="bg-black bg-opacity-0 h-full flex flex-col items-center justify-center mt-2">
+                    <h2 class="upper-left-text !text-6xl">Tiny Sky Delivery </h2>
+                    <h2 class="lower-upper-left-text !text-4xl">C# / Unity</h2>
+                    <h2 class="side-project-text !text-4xl opacity-100 group-hover:opacity-0">The game I was brought onto develop during my contract work for Tenstack. Among other things, I developed a Dialogue Graph, with Camera Angles and Question Nodes.</h2>
                 </div>
             </div>
 
@@ -142,28 +161,6 @@
                     <h2 class="side-project-text !text-4xl opacity-100 group-hover:opacity-0">A game developed over the weekend for the Global Game Jam with a team size of 4.</h2>
                 </div>
             </div>
-            
-            <div class="side_section" style="background-image: url('../img/skydeliveryservice.gif');">
-                <div class="bg-black bg-opacity-0 h-full flex flex-col items-center justify-center mt-2">
-                    <h2 class="upper-left-text !text-6xl">Tiny Sky Delivery </h2>
-                    <h2 class="lower-upper-left-text !text-4xl">C# / Unity</h2>
-                    <h2 class="side-project-text !text-4xl opacity-100 group-hover:opacity-0">The game I was brought onto develop during my contract work for Tenstack. Among other things, I developed a Dialogue Graph, with Camera Angles and Question Nodes.</h2>
-                </div>
-            </div>
-
-                <div class="side_section" style="background-image: url('img/splitfiction.jpg');">
-                <div class="bg-black bg-opacity-0 h-full flex flex-col items-center justify-center mt-2">
-                    <h2 class="side-project-text !text-4xl opacity-100 group-hover:opacity-0">As a contractor on this project, I focused on completing UE5 tickets related specifically to volume and collision adjustments provided by QA.</h2>
-                </div>
-            </div>
-
-            <div class="side_section" style="background-image: url('../img/unstableengine.gif');">
-                <div class="bg-black bg-opacity-0 h-full flex flex-col items-center justify-center mt-2">
-                    <h2 class="upper-left-text !text-6xl">Unstable Engine</h2>
-                    <h2 class="lower-upper-left-text !text-4xl">C++ / OpenGL</h2>
-                    <h2 class="side-project-text !text-4xl opacity-100 group-hover:opacity-0">Developed as part of the Engine course during my education at Future Games.</h2>
-                </div>
-            </div>
 
             <div class="side_section" style="background-image: url('../img/SheepWatch.gif ');">
                 <div class="bg-black bg-opacity-0 h-full flex flex-col items-center justify-center mt-2">
@@ -172,6 +169,17 @@
                     <h2 class="side-project-text !text-4xl opacity-100 group-hover:opacity-0">FutureGames GP4 where I developed the sheep behaviour over a 4 week time period.</h2>
                 </div>
             </div>
+
+            <div class="side_section group relative hover:bg-black hover:bg-opacity-50 transition" style="background-image: url('img/honkershowcase.gif');">
+                <div class="bg-black bg-opacity-0 h-full flex flex-col items-center justify-center mt-2 transition-all">
+                    <h2 class="upper-left-text !text-6xl opacity-100 group-hover:opacity-0">Honker</h2>
+                    <h2 class="lower-upper-left-text !text-4xl opacity-100 group-hover:opacity-0">C# / Unity </h2>
+                    <h2 class="side-project-text !text-4xl opacity-100 group-hover:opacity-0">
+                        Wheres Waldo type game made with Unity's Entity Component System. Developed in one month and released on Steam on May 15, 2024.
+                    </h2>
+                </div>
+            </div>
+            
 
         </div>
 
@@ -199,6 +207,11 @@
                         </g>
                     </svg>
                 </a>
+
+                <a href="https://store.steampowered.com/developer/robinz" class="navigation-image">
+                    <img src="/img/steamicon.png" alt="GitHub Icon" class="navigation-image">
+                </a>
+
             </div>
             <div class="flex justify-center mt-8">
                 <button onclick="scrollToTop()" class="bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-700">Top</button>

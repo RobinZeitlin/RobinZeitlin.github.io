@@ -9,7 +9,8 @@ html {
 }
 
 body {
-    @apply bg-secondary; /* Replace with the Tailwind class for your color */
+    @apply bg-secondary pt-16; /* Replace with the Tailwind class for your color */
+    padding-top: 60px;  
 }
 
 .primary-font
@@ -69,9 +70,19 @@ body {
     @apply primary-font absolute right-0 bottom-4 m-4 flex items-center space-x-2;
 }
 
-.section
-{
-    @apply w-full h-96 bg-cover bg-center my-4 bg-center transform transition-transform duration-300 hover:scale-95 rounded-lg cursor-pointer;
+.section {
+    @apply w-full h-96 bg-cover bg-center my-4 transform transition-transform duration-300 hover:scale-99 rounded-lg cursor-pointer relative;
+}
+
+
+/* Dark overlay effect like side_section */
+.section::before {
+    content: '';
+    @apply absolute inset-0 bg-black opacity-0 transition-opacity duration-300 rounded-lg;
+}
+
+.section:hover::before {
+    @apply opacity-75;
 }
 
 .side_section {
