@@ -63,17 +63,16 @@
 
             <div class="space-x-4">
                 <a href="#video-section" class="navigation-slot primary-font">Video</a>
-                <a href="#classespart" class="navigation-slot primary-font">Classes</a>
-                <a href="#movementpart" class="navigation-slot primary-font">Movement</a>
-                <a href="#trailspart" class="navigation-slot primary-font">Trail System</a>
-                <a href="#gamepart" class="navigation-slot primary-font">Game Class</a>
+                <a href="#backfaceculling" class="navigation-slot primary-font">Backface Culling</a>
+                <a href="#trees" class="navigation-slot primary-font">Tree Instantiation</a>
+                <a href="#architecture" class="navigation-slot primary-font">Architecture</a>
             </div>
 
         </div>
     </nav>
 
-    <div class="flex flex-col items-center justify-center p-4 rounded-lg overflow-hidden">
-        <img src="/img/worldgenthinshowcase.gif" alt="Entitys spawning" class="object-cover object-center w-1/2 h-auto rounded-lg">
+    <div id="video-section" class="flex flex-col items-center justify-center p-4 rounded-lg overflow-hidden">
+        <img src="/img/voxelworldShowcase.gif" alt="Entitys spawning" class="object-cover object-center w-1/2 h-auto rounded-lg">
     </div>
     
 
@@ -91,11 +90,11 @@
             </div>
 
              <div class="items-center justify-center p-4 rounded-lg">
-                <h1 class="primary-font">The Engine was built for this project specifically. For this project I used what I've learnt the past months and focused on the projects architecture, and also som fun optimisation solutions. This was done through seperation of project solutions, and Backface Culling. This is my current ongoing project.</h1>
+                <h1 class="primary-font">The Engine was built for this project specifically. For this project I used what I've learnt the past months and focused on the projects architecture, and also som fun optimisation solutions. This was done through seperation of project solutions, and Backface Culling. This is my ongoing side project.</h1>
             </div>
         </div>
 
-        <div id="code" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div id="backfaceculling" class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
             <div class="flex flex-col justify-center p-4 rounded-lg">
                 <h1 class="header-font !text-4xl items-center">Backface Culling</h1>
@@ -108,7 +107,24 @@
             
         </div>
 
-        <div id="code" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div id="trees" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+            <div class="flex flex-col items-center justify-center p-4 rounded-lg">
+                <video autoplay muted loop class="max-w-screen-m h-auto rounded-lg">
+                    <source src="/videos/showcasetrees.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p class="text-sm text-center mt-2 primary-font">Showcase of the trees spawned ontop of the voxel terrain.</p>
+            </div>
+
+            <div class="flex flex-col justify-center p-4 rounded-lg">
+                <h1 class="header-font !text-4xl items-center">Tree Instantiation</h1>
+                <h1 class="primary-font items-center">The generation uses two perlin noises. One for the voxel terrain and one to determine where the trees should be instantiated. The trees then uses the same perlin noise as the voxel terrain to determine its height in the world, resulting in the trees being neatly placed ontop of the terrain.</h1>
+            </div>
+            
+        </div>
+
+        <div id="architecture" class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
             <div class="flex flex-col items-center justify-center p-4 rounded-lg overflow-hidden">
                 <img src="/img/architectureShowcase.png" alt="Entitys spawning" class="object-cover object-center w-1/2 h-auto rounded-lg">
@@ -120,6 +136,7 @@
             </div>
             
         </div>
+        
 
     </div>
     
