@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,20 +12,32 @@
         .tab-content {
             display: none;
         }
+
         .tab-content.active {
             display: block;
         }
+
         body {
-            padding-top: 60px; /* Default padding for larger screens */
+            padding-top: 60px;
+            /* Default padding for larger screens */
+        }
+
+        #summary-wrapper {
+            background-color: #15202B;
+            color: white;
+            padding: 24px;
+            border-radius: 12px;
         }
 
         @media (max-width: 640px) {
             body {
-                padding-top: 200px; /* Increased padding for smaller screens (phones) */
+                padding-top: 200px;
+                /* Increased padding for smaller screens (phones) */
             }
         }
     </style>
 </head>
+
 <body>
 
     <nav class="navigation-bar">
@@ -41,15 +54,19 @@
                 </a>
 
                 <a href="/pdf/RobinZeitlinCurriculumVitae.pdf" class="navigation-image">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
-                        viewBox="0 0 34 42.5" enable-background="new 0 0 34 34" xml:space="preserve">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        x="0px" y="0px" viewBox="0 0 34 42.5" enable-background="new 0 0 34 34" xml:space="preserve">
                         <g>
                             <path
-                                d="M30,4.8C30,2.7,28.3,1,26.2,1H7.8C5.7,1,4,2.7,4,4.8v24.4C4,31.3,5.7,33,7.8,33h18.4c2.1,0,3.8-1.7,3.8-3.8V4.8z M28,29.2   c0,1-0.8,1.8-1.8,1.8H7.8c-1,0-1.8-0.8-1.8-1.8V4.8C6,3.8,6.8,3,7.8,3h18.4c1,0,1.8,0.8,1.8,1.8V29.2z" fill="#ffff"/>
+                                d="M30,4.8C30,2.7,28.3,1,26.2,1H7.8C5.7,1,4,2.7,4,4.8v24.4C4,31.3,5.7,33,7.8,33h18.4c2.1,0,3.8-1.7,3.8-3.8V4.8z M28,29.2   c0,1-0.8,1.8-1.8,1.8H7.8c-1,0-1.8-0.8-1.8-1.8V4.8C6,3.8,6.8,3,7.8,3h18.4c1,0,1.8,0.8,1.8,1.8V29.2z"
+                                fill="#ffff" />
                             <path
-                                d="M10.9,19h11.8c0.3,0,0.6-0.1,0.8-0.4c0.2-0.2,0.3-0.5,0.2-0.8c-0.4-2.4-1.9-4.3-3.9-5.2c0.6-0.7,1-1.6,1-2.7   c0-2.2-1.8-4-4-4s-4,1.8-4,4c0,1,0.4,1.9,1,2.7c-2,1-3.6,2.9-3.9,5.2c0,0.3,0,0.6,0.2,0.8C10.3,18.9,10.6,19,10.9,19z M14.8,10   c0-1.1,0.9-2,2-2s2,0.9,2,2s-0.9,2-2,2S14.8,11.1,14.8,10z M16.8,14c2,0,3.8,1.2,4.6,3h-9.2C13,15.2,14.8,14,16.8,14z" fill="#ffff" />
-                            <path d="M25,22H9c-0.6,0-1,0.4-1,1s0.4,1,1,1h16c0.6,0,1-0.4,1-1S25.6,22,25,22z" fill="#ffff"/>
-                            <path d="M25,26H9c-0.6,0-1,0.4-1,1s0.4,1,1,1h16c0.6,0,1-0.4,1-1S25.6,26,25,26z" fill="#ffff" />
+                                d="M10.9,19h11.8c0.3,0,0.6-0.1,0.8-0.4c0.2-0.2,0.3-0.5,0.2-0.8c-0.4-2.4-1.9-4.3-3.9-5.2c0.6-0.7,1-1.6,1-2.7   c0-2.2-1.8-4-4-4s-4,1.8-4,4c0,1,0.4,1.9,1,2.7c-2,1-3.6,2.9-3.9,5.2c0,0.3,0,0.6,0.2,0.8C10.3,18.9,10.6,19,10.9,19z M14.8,10   c0-1.1,0.9-2,2-2s2,0.9,2,2s-0.9,2-2,2S14.8,11.1,14.8,10z M16.8,14c2,0,3.8,1.2,4.6,3h-9.2C13,15.2,14.8,14,16.8,14z"
+                                fill="#ffff" />
+                            <path d="M25,22H9c-0.6,0-1,0.4-1,1s0.4,1,1,1h16c0.6,0,1-0.4,1-1S25.6,22,25,22z"
+                                fill="#ffff" />
+                            <path d="M25,26H9c-0.6,0-1,0.4-1,1s0.4,1,1,1h16c0.6,0,1-0.4,1-1S25.6,26,25,26z"
+                                fill="#ffff" />
                         </g>
                     </svg>
                 </a>
@@ -70,9 +87,12 @@
 
         </div>
     </nav>
-    
+
     <div id="video-section" class="youtube-video">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/W3qY6oEN-xQ?si=TdfSaNzrt3b0Y50b" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/W3qY6oEN-xQ?si=TdfSaNzrt3b0Y50b"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
     <div class="container mx-auto p-4">
@@ -81,29 +101,33 @@
             <div class="flex flex-col items-center justify-center">
                 <h1 class="primary-font !text-6xl">(xyz)⁰</h1>
                 <h1 class="primary-font !text-4xl !font-thin !text-amber-200">C++ / OpenGL</h1>
-                <h1 class="primary-font !text-2xl !font-thin">👥 4</h1> 
+                <h1 class="primary-font !text-2xl !font-thin">👥 4</h1>
                 <h1 class="primary-font !text-2xl !font-thin">📅 2024/08 - 2024/12</h1>
-                <a href="https://github.com/proxima-k/FPSOpenGL" target="_blank" class="text-blue-500 hover:underline !text-2xl">
+                <a href="https://github.com/proxima-k/FPSOpenGL" target="_blank"
+                    class="text-blue-500 hover:underline !text-2xl">
                     Github
                 </a>
             </div>
 
-             <div class="items-center justify-center p-4 rounded-lg">
-                <h1 class="primary-font">My first proper C++ game, the Engine is built for this project specifically. I implemented several gameplay features, including AABB collision detection, physics, a particle system, and UI using ImGUI. The goal of this project is to deepen my knowledge of C++ beyond using Unreal Engine.</h1>
+            <div class="items-center justify-center p-4 rounded-lg">
+                <h1 class="primary-font">My first proper C++ game, the Engine is built for this project specifically. I
+                    implemented several gameplay features, including AABB collision detection, physics, a particle
+                    system, and UI using ImGUI. The goal of this project is to deepen my knowledge of C++ beyond using
+                    Unreal Engine.</h1>
             </div>
         </div>
 
-        
-        
+
+
         <div id="classespart" class="grid grid-cols-1 md:grid-cols-1 gap-4">
-            
+
             <div class="flex items-center justify-center p-4 rounded-lg">
                 <video autoplay muted loop class="max-w-screen-lg h-auto rounded-lg">
                     <source src="/videos/showcasexyz.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
             </div>
-            
+
         </div>
 
 
@@ -115,15 +139,15 @@
                 <button class="tab-button button-font" data-target="content6">Physicsbody.h</button>
                 <button class="tab-button button-font" data-target="content2">Physicsbody.cpp</button>
             </div>
-    
+
             <!-- Tab Content -->
-            
+
             <div id="content1" class="tab-content">
                 <div class="w-full mx-auto  p-4 rounded-lg">
                     <pre><code id="transform" class="C++">Loading...</code></pre>
                 </div>
             </div>
-            
+
             <div id="content2" class="tab-content">
                 <div class="w-full mx-auto p-4 rounded-lg">
                     <pre><code id="physicsbody" class="C++">Loading..</code></pre>
@@ -135,7 +159,7 @@
                     <pre><code id="physicsbodyh" class="C++">Loading..</code></pre>
                 </div>
             </div>
-            
+
         </div>
 
         <!-- SECOND AREA -->
@@ -146,13 +170,19 @@
                     <source src="/videos/movement.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                 </video>
-                <p class="text-sm text-center mt-2 primary-font">In addition to simple movement the player also has the ability to dash.</p>
+                <p class="text-sm text-center mt-2 primary-font">In addition to simple movement the player also has the
+                    ability to dash.</p>
             </div>
 
             <div class="flex flex-col justify-center p-4 rounded-lg">
                 <h1 class="header-font !text-4xl items-center">Player Movement</h1>
-                <h1 class="primary-font items-center mb-8">One of my primary goals for this project was to create a simple physics system and develop an enjoyable player controller. I added dampening that changes based on if the player is grounded, similar to friction.</h1>
-                <h1 class="primary-font items-center">The dash was initially programmed to be velocity-direction-based in order to give the player as much control over their character as possible. But I later reprogrammed it to be based on the current mouse direction.</h1>
+                <h1 class="primary-font items-center mb-8">One of my primary goals for this project was to create a
+                    simple physics system and develop an enjoyable player controller. I added dampening that changes
+                    based on if the player is grounded, similar to friction.</h1>
+                <h1 class="primary-font items-center">The dash was initially programmed to be velocity-direction-based
+                    to give the player as much control over their character as possible. However, I later reprogrammed
+                    it to be based on the current mouse direction, as it was easier for new players to pick up and use.
+                </h1>
             </div>
 
         </div>
@@ -164,9 +194,9 @@
                 <button class="tab-button button-font" data-target="content4">Player.cpp</button>
                 <button class="tab-button button-font" data-target="content7">Player.h</button>
             </div>
-    
+
             <!-- Tab Content -->
-            
+
             <div id="content4" class="tab-content">
                 <div class="w-full mx-auto  p-4 rounded-lg">
                     <pre><code id="movement" class="C++">Loading...</code></pre>
@@ -194,9 +224,11 @@
 
             <div class="flex flex-col justify-center p-4 rounded-lg">
                 <h1 class="header-font !text-4xl items-center">Trail System</h1>
-                <h1 class="primary-font items-center">The trail system pushes new vertex points to the trail mesh and then updates it. By taking their position in the list and using that position togheter with an easing function we can determine a y position offset that makes the trail pointy.</h1>
+                <h1 class="primary-font items-center">The trail system pushes new vertex points to the trail mesh and
+                    then updates it. By taking their position in the list and using that position togheter with an
+                    easing function we can determine a y position offset that makes the trail pointy.</h1>
             </div>
-        
+
         </div>
 
         <div class="container mx-auto p-4">
@@ -205,9 +237,9 @@
             <div class="flex space-x-4 mb-4 w-[55%] mx-auto p-4 rounded-lg">
                 <button class="tab-button button-font" data-target="content5">TrailMesh.cpp</button>
             </div>
-    
+
             <!-- Tab Content -->
-            
+
             <div id="content5" class="tab-content">
                 <div class="w-full mx-auto  p-4 rounded-lg">
                     <pre><code id="trail" class="C++">Loading...</code></pre>
@@ -215,14 +247,16 @@
             </div>
 
         </div>
-        
+
         <div id="code" class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
             <div class="flex flex-col justify-center p-4 rounded-lg">
                 <h1 class="header-font !text-4xl items-center">Game Class</h1>
-                <h1 class="primary-font items-center">The Game class is responsible for managing all the entitys currently in memory, updating and rendering them, and spawning new entitys. Its also handles collisions detection between entitys using AABB checks.</h1>
+                <h1 class="primary-font items-center">The Game class is responsible for managing all the entitys
+                    currently in memory, updating and rendering them, and spawning new entitys. Its also handles
+                    collisions detection between entitys using AABB checks.</h1>
             </div>
-        
+
             <div class="flex flex-col items-center justify-center p-4 rounded-lg">
                 <video autoplay muted loop class="max-w-screen-m h-auto rounded-lg">
                     <source src="/videos/showcasespawning.mp4" type="video/mp4">
@@ -240,22 +274,49 @@
                 <button class="tab-button button-font" data-target="content8">Game.cpp</button>
                 <button class="tab-button button-font" data-target="content9">Game.h</button>
             </div>
-    
+
             <!-- Tab Content -->
-            
+
             <div id="content8" class="tab-content">
                 <div class="w-full mx-auto  p-4 rounded-lg">
                     <pre><code id="game" class="C++">Loading...</code></pre>
                 </div>
             </div>
-            
+
             <div id="content9" class="tab-content">
                 <div class="w-full mx-auto p-4 rounded-lg">
                     <pre><code id="gameh" class="C++">Loading..</code></pre>
                 </div>
             </div>
-            
         </div>
+
+        <div id="summary-wrapper">
+            <div id="summary" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                <div class="flex flex-col justify-center p-4 rounded-lg">
+                    <h1 class="header-font !text-4xl items-center">Reflection</h1>
+                    <h1 class="primary-font items-center mb-8">
+                        This project has been an incredibly valuable learning experience. When I started, I had limited
+                        experience working with pure C++. Throughout the project, I gained proficiency in using
+                        essential libraries, managing memory effectively, and writing optimized, efficient code.
+                    </h1>
+                    <h1 class="primary-font items-center">
+                        As a result, I now feel confident in my ability to write C++ code and am excited to continue
+                        building on the knowledge I’ve gained.
+                    </h1>
+
+                </div>
+
+                <div class="flex flex-col items-center justify-center p-4 rounded-lg">
+                    <video autoplay muted loop class="max-w-screen-m h-auto rounded-lg">
+                        <source src="/videos/trails.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+
+            </div>
+        </div>
+
     </div>
 
     <!-- Footer Section -->
@@ -270,14 +331,16 @@
             </a>
 
             <a href="/pdf/RobinZeitlinCurriculumVitae.pdf" class="navigation-image">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
-                    viewBox="0 0 34 42.5" enable-background="new 0 0 34 34" xml:space="preserve">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
+                    y="0px" viewBox="0 0 34 42.5" enable-background="new 0 0 34 34" xml:space="preserve">
                     <g>
                         <path
-                            d="M30,4.8C30,2.7,28.3,1,26.2,1H7.8C5.7,1,4,2.7,4,4.8v24.4C4,31.3,5.7,33,7.8,33h18.4c2.1,0,3.8-1.7,3.8-3.8V4.8z M28,29.2   c0,1-0.8,1.8-1.8,1.8H7.8c-1,0-1.8-0.8-1.8-1.8V4.8C6,3.8,6.8,3,7.8,3h18.4c1,0,1.8,0.8,1.8,1.8V29.2z" fill="#ffff"/>
+                            d="M30,4.8C30,2.7,28.3,1,26.2,1H7.8C5.7,1,4,2.7,4,4.8v24.4C4,31.3,5.7,33,7.8,33h18.4c2.1,0,3.8-1.7,3.8-3.8V4.8z M28,29.2   c0,1-0.8,1.8-1.8,1.8H7.8c-1,0-1.8-0.8-1.8-1.8V4.8C6,3.8,6.8,3,7.8,3h18.4c1,0,1.8,0.8,1.8,1.8V29.2z"
+                            fill="#ffff" />
                         <path
-                            d="M10.9,19h11.8c0.3,0,0.6-0.1,0.8-0.4c0.2-0.2,0.3-0.5,0.2-0.8c-0.4-2.4-1.9-4.3-3.9-5.2c0.6-0.7,1-1.6,1-2.7   c0-2.2-1.8-4-4-4s-4,1.8-4,4c0,1,0.4,1.9,1,2.7c-2,1-3.6,2.9-3.9,5.2c0,0.3,0,0.6,0.2,0.8C10.3,18.9,10.6,19,10.9,19z M14.8,10   c0-1.1,0.9-2,2-2s2,0.9,2,2s-0.9,2-2,2S14.8,11.1,14.8,10z M16.8,14c2,0,3.8,1.2,4.6,3h-9.2C13,15.2,14.8,14,16.8,14z" fill="#ffff" />
-                        <path d="M25,22H9c-0.6,0-1,0.4-1,1s0.4,1,1,1h16c0.6,0,1-0.4,1-1S25.6,22,25,22z" fill="#ffff"/>
+                            d="M10.9,19h11.8c0.3,0,0.6-0.1,0.8-0.4c0.2-0.2,0.3-0.5,0.2-0.8c-0.4-2.4-1.9-4.3-3.9-5.2c0.6-0.7,1-1.6,1-2.7   c0-2.2-1.8-4-4-4s-4,1.8-4,4c0,1,0.4,1.9,1,2.7c-2,1-3.6,2.9-3.9,5.2c0,0.3,0,0.6,0.2,0.8C10.3,18.9,10.6,19,10.9,19z M14.8,10   c0-1.1,0.9-2,2-2s2,0.9,2,2s-0.9,2-2,2S14.8,11.1,14.8,10z M16.8,14c2,0,3.8,1.2,4.6,3h-9.2C13,15.2,14.8,14,16.8,14z"
+                            fill="#ffff" />
+                        <path d="M25,22H9c-0.6,0-1,0.4-1,1s0.4,1,1,1h16c0.6,0,1-0.4,1-1S25.6,22,25,22z" fill="#ffff" />
                         <path d="M25,26H9c-0.6,0-1,0.4-1,1s0.4,1,1,1h16c0.6,0,1-0.4,1-1S25.6,26,25,26z" fill="#ffff" />
                     </g>
                 </svg>
@@ -289,58 +352,59 @@
 
         </div>
         <div class="flex justify-center mt-8">
-            <button onclick="scrollToTop()" class="bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-700">Top</button>
+            <button onclick="scrollToTop()"
+                class="bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-700">Top</button>
         </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/cpp.min.js"></script>
     <script>
-    // Function to handle tab switching with toggle behavior
-    function switchTab(targetId) {
-    const targetElement = document.getElementById(targetId);
-    const isActive = targetElement.classList.contains('active');
+        // Function to handle tab switching with toggle behavior
+        function switchTab(targetId) {
+            const targetElement = document.getElementById(targetId);
+            const isActive = targetElement.classList.contains('active');
 
-    // Hide all tab content if the clicked tab is not active
-    if (!isActive) {
-        document.querySelectorAll('.tab-content').forEach(content => {
-            content.classList.remove('active');
-        });
+            // Hide all tab content if the clicked tab is not active
+            if (!isActive) {
+                document.querySelectorAll('.tab-content').forEach(content => {
+                    content.classList.remove('active');
+                });
 
-        // Remove active class from all buttons
+                // Remove active class from all buttons
+                document.querySelectorAll('.tab-button').forEach(button => {
+                    button.classList.remove('bg-blue-500', 'text-white');
+                    button.classList.add('bg-gray-300', 'text-gray-800');
+                });
+
+                // Show the selected tab content
+                targetElement.classList.add('active');
+
+                // Highlight the selected tab button
+                document.querySelector(`.tab-button[data-target="${targetId}"]`).classList.add('bg-blue-500', 'text-white');
+                document.querySelector(`.tab-button[data-target="${targetId}"]`).classList.remove('bg-gray-300', 'text-gray-800');
+            } else {
+                // If the clicked tab is active, hide it
+                targetElement.classList.remove('active');
+                document.querySelector(`.tab-button[data-target="${targetId}"]`).classList.remove('bg-blue-500', 'text-white');
+                document.querySelector(`.tab-button[data-target="${targetId}"]`).classList.add('bg-gray-300', 'text-gray-800');
+            }
+        }
+
+        // Event listeners for tab buttons
         document.querySelectorAll('.tab-button').forEach(button => {
-        button.classList.remove('bg-blue-500', 'text-white');
-        button.classList.add('bg-gray-300', 'text-gray-800');
-    });
-
-        // Show the selected tab content
-        targetElement.classList.add('active');
-
-        // Highlight the selected tab button
-        document.querySelector(`.tab-button[data-target="${targetId}"]`).classList.add('bg-blue-500', 'text-white');
-        document.querySelector(`.tab-button[data-target="${targetId}"]`).classList.remove('bg-gray-300', 'text-gray-800');
-    } else {
-        // If the clicked tab is active, hide it
-        targetElement.classList.remove('active');
-        document.querySelector(`.tab-button[data-target="${targetId}"]`).classList.remove('bg-blue-500', 'text-white');
-        document.querySelector(`.tab-button[data-target="${targetId}"]`).classList.add('bg-gray-300', 'text-gray-800');
-    }
-    }
-
-   // Event listeners for tab buttons
-    document.querySelectorAll('.tab-button').forEach(button => {
-        button.addEventListener('click', () => switchTab(button.getAttribute('data-target')));
-    });
-
-    // Ensure no tabs are active initially
-    document.addEventListener('DOMContentLoaded', () => {
-        document.querySelectorAll('.tab-content').forEach(content => {
-        content.classList.remove('active');
-    });
-
-    document.querySelectorAll('.tab-button').forEach(button => {
-            button.classList.add('bg-gray-300', 'text-gray-800');
+            button.addEventListener('click', () => switchTab(button.getAttribute('data-target')));
         });
-    });
+
+        // Ensure no tabs are active initially
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.classList.add('bg-gray-300', 'text-gray-800');
+            });
+        });
 
         function updateCodeContent() {
             fetch('/json/xyz.json')
@@ -360,7 +424,7 @@
                     if (data.movement) {
                         const codeElement4 = document.getElementById('movement');
                         codeElement4.textContent = data.movement;
-                        hljs.highlightElement(codeElement4); 
+                        hljs.highlightElement(codeElement4);
                     }
                     if (data.trail) {
                         const codeElement5 = document.getElementById('trail');
@@ -402,4 +466,5 @@
         }
     </script>
 </body>
+
 </html>

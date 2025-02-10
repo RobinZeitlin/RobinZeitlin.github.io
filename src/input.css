@@ -108,12 +108,9 @@ body {
     @apply primary-font absolute left-0 m-4 top-16 font-light !text-amber-200;
 }
 
+
 .side-project-text {
     @apply primary-font absolute left-0 m-4 top-28 font-light !text-amber-200 opacity-0 transition-opacity duration-300;
-}
-
-.side-project-img {
-    @apply absolute left-0 m-4 top-28
 }
 
 .side_section:hover .side-project-text {

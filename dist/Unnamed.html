@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,20 +12,32 @@
         .tab-content {
             display: none;
         }
+
         .tab-content.active {
             display: block;
         }
+
         body {
-            padding-top: 60px; /* Default padding for larger screens */
+            padding-top: 60px;
+            /* Default padding for larger screens */
+        }
+
+        #summary-wrapper {
+            background-color: #15202B;
+            color: white;
+            padding: 24px;
+            border-radius: 12px;
         }
 
         @media (max-width: 640px) {
             body {
-                padding-top: 200px; /* Increased padding for smaller screens (phones) */
+                padding-top: 200px;
+                /* Increased padding for smaller screens (phones) */
             }
         }
     </style>
 </head>
+
 <body>
 
     <nav class="navigation-bar">
@@ -41,15 +54,19 @@
                 </a>
 
                 <a href="/pdf/RobinZeitlinCurriculumVitae.pdf" class="navigation-image">
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
-                        viewBox="0 0 34 42.5" enable-background="new 0 0 34 34" xml:space="preserve">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        x="0px" y="0px" viewBox="0 0 34 42.5" enable-background="new 0 0 34 34" xml:space="preserve">
                         <g>
                             <path
-                                d="M30,4.8C30,2.7,28.3,1,26.2,1H7.8C5.7,1,4,2.7,4,4.8v24.4C4,31.3,5.7,33,7.8,33h18.4c2.1,0,3.8-1.7,3.8-3.8V4.8z M28,29.2   c0,1-0.8,1.8-1.8,1.8H7.8c-1,0-1.8-0.8-1.8-1.8V4.8C6,3.8,6.8,3,7.8,3h18.4c1,0,1.8,0.8,1.8,1.8V29.2z" fill="#ffff"/>
+                                d="M30,4.8C30,2.7,28.3,1,26.2,1H7.8C5.7,1,4,2.7,4,4.8v24.4C4,31.3,5.7,33,7.8,33h18.4c2.1,0,3.8-1.7,3.8-3.8V4.8z M28,29.2   c0,1-0.8,1.8-1.8,1.8H7.8c-1,0-1.8-0.8-1.8-1.8V4.8C6,3.8,6.8,3,7.8,3h18.4c1,0,1.8,0.8,1.8,1.8V29.2z"
+                                fill="#ffff" />
                             <path
-                                d="M10.9,19h11.8c0.3,0,0.6-0.1,0.8-0.4c0.2-0.2,0.3-0.5,0.2-0.8c-0.4-2.4-1.9-4.3-3.9-5.2c0.6-0.7,1-1.6,1-2.7   c0-2.2-1.8-4-4-4s-4,1.8-4,4c0,1,0.4,1.9,1,2.7c-2,1-3.6,2.9-3.9,5.2c0,0.3,0,0.6,0.2,0.8C10.3,18.9,10.6,19,10.9,19z M14.8,10   c0-1.1,0.9-2,2-2s2,0.9,2,2s-0.9,2-2,2S14.8,11.1,14.8,10z M16.8,14c2,0,3.8,1.2,4.6,3h-9.2C13,15.2,14.8,14,16.8,14z" fill="#ffff" />
-                            <path d="M25,22H9c-0.6,0-1,0.4-1,1s0.4,1,1,1h16c0.6,0,1-0.4,1-1S25.6,22,25,22z" fill="#ffff"/>
-                            <path d="M25,26H9c-0.6,0-1,0.4-1,1s0.4,1,1,1h16c0.6,0,1-0.4,1-1S25.6,26,25,26z" fill="#ffff" />
+                                d="M10.9,19h11.8c0.3,0,0.6-0.1,0.8-0.4c0.2-0.2,0.3-0.5,0.2-0.8c-0.4-2.4-1.9-4.3-3.9-5.2c0.6-0.7,1-1.6,1-2.7   c0-2.2-1.8-4-4-4s-4,1.8-4,4c0,1,0.4,1.9,1,2.7c-2,1-3.6,2.9-3.9,5.2c0,0.3,0,0.6,0.2,0.8C10.3,18.9,10.6,19,10.9,19z M14.8,10   c0-1.1,0.9-2,2-2s2,0.9,2,2s-0.9,2-2,2S14.8,11.1,14.8,10z M16.8,14c2,0,3.8,1.2,4.6,3h-9.2C13,15.2,14.8,14,16.8,14z"
+                                fill="#ffff" />
+                            <path d="M25,22H9c-0.6,0-1,0.4-1,1s0.4,1,1,1h16c0.6,0,1-0.4,1-1S25.6,22,25,22z"
+                                fill="#ffff" />
+                            <path d="M25,26H9c-0.6,0-1,0.4-1,1s0.4,1,1,1h16c0.6,0,1-0.4,1-1S25.6,26,25,26z"
+                                fill="#ffff" />
                         </g>
                     </svg>
                 </a>
@@ -66,13 +83,17 @@
                 <a href="#particlepart" class="navigation-slot primary-font">Particle System</a>
                 <a href="#editorpart" class="navigation-slot primary-font">Level Editor</a>
                 <a href="#spline" class="navigation-slot primary-font">Spline</a>
+                <a href="#reflection" class="navigation-slot primary-font">Reflection</a>
             </div>
 
         </div>
     </nav>
-    
+
     <div id="video-section" class="youtube-video">
-        <iframe class="w-full h-full" src="https://www.youtube.com/embed/uL-NPmd4G48?si=LJzMRBeNLk3Kz6hK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/uL-NPmd4G48?si=LJzMRBeNLk3Kz6hK"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
     <div class="container mx-auto p-4">
@@ -81,41 +102,46 @@
             <div class="flex flex-col items-center justify-center">
                 <h1 class="primary-font !text-6xl">Boom'n'Rang</h1>
                 <h1 class="primary-font !text-4xl !font-thin !text-amber-200">C++ / SDL2</h1>
-                <h1 class="primary-font !text-2xl !font-thin">👥 1</h1> 
+                <h1 class="primary-font !text-2xl !font-thin">👥 1</h1>
                 <h1 class="primary-font !text-2xl !font-thin">📅 2024/10 - 2024/11</h1>
-                <a href="https://github.com/RobinZeitlin/SDL2" target="_blank" class="text-blue-500 hover:underline !text-2xl">
+                <a href="https://github.com/RobinZeitlin/SDL2" target="_blank"
+                    class="text-blue-500 hover:underline !text-2xl">
                     Github
                 </a>
             </div>
 
-             <div class="items-center justify-center p-4 rounded-lg">
+            <div class="items-center justify-center p-4 rounded-lg">
                 <h1 class="primary-font">
-                    The engine used for this project was specifically built for this project but could be abstracted for further use. The project started off as a hobby project, but due to collaboration interest from designers who wanted to work on level building, I decided to develop a small-sized editor UI for the project.
+                    The engine used for this project was specifically built for this project but could be abstracted for
+                    further use. The project started off as a hobby project, but due to collaboration interest from
+                    designers who wanted to work on level building, I decided to develop a small-sized editor UI for the
+                    project.
                 </h1>
             </div>
         </div>
 
-        
-        
+
+
         <div id="boomerangpart" class="grid grid-cols-1 md:grid-cols-1 gap-4">
-            
+
             <div class="flex items-center justify-center p-4 rounded-lg">
-                <img src="/img/showcasePassionProject.gif" alt="Bouncing boomerang visualized with line drawing" class="max-w-screen-m h-auto rounded-lg" />
+                <img src="/img/showcasePassionProject.gif" alt="Bouncing boomerang visualized with line drawing"
+                    class="max-w-screen-m h-auto rounded-lg" />
             </div>
-            
+
         </div>
 
 
         <div class="container mx-auto p-4">
-    
+
             <!-- Tab Content -->
-            
+
             <div id="" class="tab-content">
                 <div class="w-full mx-auto  p-4 rounded-lg">
                     <pre><code id="transform" class="C++">Loading...</code></pre>
                 </div>
             </div>
-            
+
             <div id="" class="tab-content">
                 <div class="w-full mx-auto p-4 rounded-lg">
                     <pre><code id="physicsbody" class="C++">Loading..</code></pre>
@@ -127,21 +153,25 @@
                     <pre><code id="physicsbodyh" class="C++">Loading..</code></pre>
                 </div>
             </div>
-            
+
         </div>
 
         <!-- SECOND AREA -->
         <div id="code" class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
             <div id="boomerangpart" class="flex flex-col items-center justify-center p-4 rounded-lg">
-                <img src="/img/boomerangBouncingShowcase.gif" alt="Bouncing boomerang visualized with line drawing" class="max-w-screen-m h-auto rounded-lg" />
+                <img src="/img/boomerangBouncingShowcase.gif" alt="Bouncing boomerang visualized with line drawing"
+                    class="max-w-screen-m h-auto rounded-lg" />
                 <p class="text-sm text-center mt-2 primary-font">Bouncing boomerang visualised with line drawing.</p>
             </div>
 
             <div class="flex flex-col justify-center p-4 rounded-lg">
                 <h1 class="header-font !text-4xl items-center">Boomerang</h1>
-                <h1 class="primary-font items-center mb-8">The boomerang utilizes a reflection formula to determine how it bounces after colliding with a surface.</h1>
-                <h1 class="primary-font items-center">The visualization uses the same formula, but instead of checking for the boomerang's overlap, it performs a 'LineTrace' that returns the necessary information, which is then used to draw the debug lines.</h1>
+                <h1 class="primary-font items-center mb-8">The boomerang utilizes a reflection formula to determine how
+                    it bounces after colliding with a surface.</h1>
+                <h1 class="primary-font items-center">The visualization uses the same formula, but instead of checking
+                    for the boomerang's overlap, it performs a 'LineTrace' that returns the necessary information, which
+                    is then used to draw the debug lines.</h1>
             </div>
 
         </div>
@@ -153,9 +183,9 @@
                 <button class="tab-button button-font" data-target="content1">Boomerang.h</button>
                 <button class="tab-button button-font" data-target="content2">Boomerang.cpp</button>
             </div>
-    
+
             <!-- Tab Content -->
-            
+
             <div id="content1" class="tab-content">
                 <div class="w-full mx-auto  p-4 rounded-lg">
                     <pre><code id="boomerangh" class="C++">Loading...</code></pre>
@@ -174,16 +204,20 @@
         <div id="code" class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
             <div id="particlepart" class="flex flex-col items-center justify-center p-4 rounded-lg">
-                <img src="/img/thirdIterationParticleSystemShowcase.gif" alt="Bouncing boomerang visualized with line drawing" class="max-w-screen-m h-auto rounded-lg" />
-                <p class="text-sm text-center mt-2 primary-font">Gif showcases two particle systems being spawned ontop of eachother.</p>
+                <img src="/img/thirdIterationParticleSystemShowcase.gif"
+                    alt="Bouncing boomerang visualized with line drawing" class="max-w-screen-m h-auto rounded-lg" />
+                <p class="text-sm text-center mt-2 primary-font">Gif showcases two particle systems being spawned ontop
+                    of eachother.</p>
             </div>
 
             <div class="flex flex-col justify-center p-4 rounded-lg">
                 <h1 class="header-font !text-4xl items-center">Particle System</h1>
-                <h1 class="primary-font items-center mb-8">Spawns multiple particles, applies random offsets to them, and scales them based on a 'Bouncing' cubic easing function.</h1>
-                <h1 class="primary-font items-center">The particle updating and rendering are completely separated from the actor class to keep it as lightweight as possible.</h1>
+                <h1 class="primary-font items-center mb-8">Spawns multiple particles, applies random offsets to them,
+                    and scales them based on a 'Bouncing' cubic easing function.</h1>
+                <h1 class="primary-font items-center">The particle updating and rendering are completely separated from
+                    the actor class to keep it as lightweight as possible.</h1>
             </div>
-        
+
         </div>
 
         <div class="container mx-auto p-4">
@@ -195,9 +229,9 @@
                 <button class="tab-button button-font" data-target="content5">Particle.h</button>
                 <button class="tab-button button-font" data-target="content6">Particle.cpp</button>
             </div>
-    
+
             <!-- Tab Content -->
-            
+
             <div id="content3" class="tab-content">
                 <div class="w-full mx-auto  p-4 rounded-lg">
                     <pre><code id="particlecontrollerh" class="C++">Loading...</code></pre>
@@ -223,14 +257,17 @@
             </div>
 
         </div>
-        
+
         <div id="code" class="grid grid-cols-1 md:grid-cols-2 gap-4">
 
             <div id="editorpart" class="flex flex-col justify-center p-4 rounded-lg">
                 <h1 class="header-font !text-4xl items-center">Level Editor</h1>
-                <h1 class="primary-font items-center">The level editor features a toggleable background grid, the ability to save and load levels from .csv files, and tools for selecting and placing different actors such as enemies and blocks. I am currently developing a spline system that will serve as an attachment rail for the camera.</h1>
+                <h1 class="primary-font items-center">The level editor features a toggleable background grid, the
+                    ability to save and load levels from .csv files, and tools for selecting and placing various actors,
+                    such as enemies and blocks. It also includes a spline editor, which the camera attaches to when in
+                    proximity.</h1>
             </div>
-        
+
             <div class="flex flex-col items-center justify-center p-4 rounded-lg">
                 <video autoplay muted loop class="max-w-screen-m h-auto rounded-lg">
                     <source src="/videos/showacseEditor.mp4" type="video/mp4">
@@ -246,21 +283,21 @@
             <!-- Tab Buttons -->
             <div class="flex justify-center space-x-4 mb-4 w-[55%] mx-auto p-4 rounded-lg">
             </div>
-    
+
             <!-- Tab Content -->
-            
+
             <div id="content8" class="tab-content">
                 <div class="w-full mx-auto  p-4 rounded-lg">
                     <pre><code id="game" class="C++">Loading...</code></pre>
                 </div>
             </div>
-            
+
             <div id="content9" class="tab-content">
                 <div class="w-full mx-auto p-4 rounded-lg">
                     <pre><code id="gameh" class="C++">Loading..</code></pre>
                 </div>
             </div>
-            
+
         </div>
 
         <div id="spline" class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -275,8 +312,12 @@
 
             <div class="flex flex-col justify-center p-4 rounded-lg">
                 <h1 class="header-font !text-4xl items-center">Spline Tool</h1>
-                <h1 class="primary-font items-center mb-8">The Spline is being used as a camera rail which the user sets up when building their level. If the player gets within a certain radius the camera attaches to the rail.</h1>
-                <p class="primary-font mb-6">It visualizes curves and points along the path, a "get_closest_point_on_spline" function calculates the nearest point on the spline based on a given position. The spline could easily be repurposed for different use cases if wanted. </p>
+                <h1 class="primary-font items-center mb-8">The Spline is being used as a camera rail which the user sets
+                    up when building their level. If the player gets within a certain radius the camera attaches to the
+                    rail.</h1>
+                <p class="primary-font mb-6">It visualizes curves and points along the path, a
+                    "get_closest_point_on_spline" function calculates the nearest point on the spline based on a given
+                    position. The spline could easily be repurposed for different use cases if wanted. </p>
             </div>
         </div>
 
@@ -292,22 +333,53 @@
                 <pre><code id="splinecpp" class="C++">Loading...</code></pre>
             </div>
         </div>
-        
+
         <div id="content11" class="tab-content">
             <div class="w-full mx-auto p-4 rounded-lg">
                 <pre><code id="splineh" class="C++">Loading...</code></pre>
             </div>
         </div>
-        
+
         <div id="content12" class="tab-content">
             <div class="w-full mx-auto p-4 rounded-lg">
                 <pre><code id="splinepointcpp" class="C++">Loading...</code></pre>
             </div>
         </div>
-        
+
         <div id="content13" class="tab-content">
             <div class="w-full mx-auto p-4 rounded-lg">
                 <pre><code id="splinepointh" class="C++">Loading...</code></pre>
+            </div>
+        </div>
+
+        <div id="summary-wrapper">
+            <div id="reflection" class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                <div class="flex flex-col justify-center p-4 rounded-lg">
+                    <h1 class="header-font !text-4xl items-center">Reflection</h1>
+                    <h1 class="primary-font items-center mb-8">
+                        The toughest challenge for this project was how I calculated the normals when using the
+                        LineTrace/Raycast. I had to make sure that the normals were calculated correctly so that the
+                        boomerang would bounce off the surface properly. By checking the point of overlap with the boxes
+                        and the ray, I was able to determine which of the four directions the boomerang was coming from
+                        and then calculate the normal based on that.
+                    </h1>
+                    <h1 class="primary-font items-center mb-8">
+                        This project was my second experience making a game engine from scratch. I learned a lot about
+                        how to structure a project and how to make it more modular. The most interesting thing to
+                        develop for this project was the spline system; making it as modular as possible was an
+                        incredibly fun problem to solve.
+                    </h1>
+                </div>
+
+
+                <div class="flex flex-col items-center justify-center p-4 rounded-lg">
+                    <div class="flex flex-col items-center justify-center p-4 rounded-lg">
+                        <img src="/img/showcasePassionProject.gif" alt="Bouncing boomerang visualized with line drawing"
+                            class="max-w-screen-m h-auto rounded-lg" />
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
@@ -318,20 +390,22 @@
             <a href="https://www.linkedin.com/in/robin-zeitlin-778a9127a/" class="navigation-image">
                 <img src="/img/LinkedinIcon.png" alt="Image 1" class="navigation-image">
             </a>
-        
+
             <a href="https://github.com/robinzeitlin" class="navigation-image">
                 <img src="/img/GithubIcon.png" alt="GitHub Icon" class="navigation-image">
             </a>
-        
+
             <a href="/pdf/RobinZeitlinCurriculumVitae.pdf" class="navigation-image">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
-                    viewBox="0 0 34 42.5" enable-background="new 0 0 34 34" xml:space="preserve">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
+                    y="0px" viewBox="0 0 34 42.5" enable-background="new 0 0 34 34" xml:space="preserve">
                     <g>
                         <path
-                            d="M30,4.8C30,2.7,28.3,1,26.2,1H7.8C5.7,1,4,2.7,4,4.8v24.4C4,31.3,5.7,33,7.8,33h18.4c2.1,0,3.8-1.7,3.8-3.8V4.8z M28,29.2   c0,1-0.8,1.8-1.8,1.8H7.8c-1,0-1.8-0.8-1.8-1.8V4.8C6,3.8,6.8,3,7.8,3h18.4c1,0,1.8,0.8,1.8,1.8V29.2z" fill="#ffff"/>
+                            d="M30,4.8C30,2.7,28.3,1,26.2,1H7.8C5.7,1,4,2.7,4,4.8v24.4C4,31.3,5.7,33,7.8,33h18.4c2.1,0,3.8-1.7,3.8-3.8V4.8z M28,29.2   c0,1-0.8,1.8-1.8,1.8H7.8c-1,0-1.8-0.8-1.8-1.8V4.8C6,3.8,6.8,3,7.8,3h18.4c1,0,1.8,0.8,1.8,1.8V29.2z"
+                            fill="#ffff" />
                         <path
-                            d="M10.9,19h11.8c0.3,0,0.6-0.1,0.8-0.4c0.2-0.2,0.3-0.5,0.2-0.8c-0.4-2.4-1.9-4.3-3.9-5.2c0.6-0.7,1-1.6,1-2.7   c0-2.2-1.8-4-4-4s-4,1.8-4,4c0,1,0.4,1.9,1,2.7c-2,1-3.6,2.9-3.9,5.2c0,0.3,0,0.6,0.2,0.8C10.3,18.9,10.6,19,10.9,19z M14.8,10   c0-1.1,0.9-2,2-2s2,0.9,2,2s-0.9,2-2,2S14.8,11.1,14.8,10z M16.8,14c2,0,3.8,1.2,4.6,3h-9.2C13,15.2,14.8,14,16.8,14z" fill="#ffff" />
-                        <path d="M25,22H9c-0.6,0-1,0.4-1,1s0.4,1,1,1h16c0.6,0,1-0.4,1-1S25.6,22,25,22z" fill="#ffff"/>
+                            d="M10.9,19h11.8c0.3,0,0.6-0.1,0.8-0.4c0.2-0.2,0.3-0.5,0.2-0.8c-0.4-2.4-1.9-4.3-3.9-5.2c0.6-0.7,1-1.6,1-2.7   c0-2.2-1.8-4-4-4s-4,1.8-4,4c0,1,0.4,1.9,1,2.7c-2,1-3.6,2.9-3.9,5.2c0,0.3,0,0.6,0.2,0.8C10.3,18.9,10.6,19,10.9,19z M14.8,10   c0-1.1,0.9-2,2-2s2,0.9,2,2s-0.9,2-2,2S14.8,11.1,14.8,10z M16.8,14c2,0,3.8,1.2,4.6,3h-9.2C13,15.2,14.8,14,16.8,14z"
+                            fill="#ffff" />
+                        <path d="M25,22H9c-0.6,0-1,0.4-1,1s0.4,1,1,1h16c0.6,0,1-0.4,1-1S25.6,22,25,22z" fill="#ffff" />
                         <path d="M25,26H9c-0.6,0-1,0.4-1,1s0.4,1,1,1h16c0.6,0,1-0.4,1-1S25.6,26,25,26z" fill="#ffff" />
                     </g>
                 </svg>
@@ -343,58 +417,59 @@
 
         </div>
         <div class="flex justify-center mt-8">
-            <button onclick="scrollToTop()" class="bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-700">Top</button>
+            <button onclick="scrollToTop()"
+                class="bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-700">Top</button>
         </div>
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/cpp.min.js"></script>
     <script>
-    // Function to handle tab switching with toggle behavior
-    function switchTab(targetId) {
-    const targetElement = document.getElementById(targetId);
-    const isActive = targetElement.classList.contains('active');
+        // Function to handle tab switching with toggle behavior
+        function switchTab(targetId) {
+            const targetElement = document.getElementById(targetId);
+            const isActive = targetElement.classList.contains('active');
 
-    // Hide all tab content if the clicked tab is not active
-    if (!isActive) {
-        document.querySelectorAll('.tab-content').forEach(content => {
-            content.classList.remove('active');
-        });
+            // Hide all tab content if the clicked tab is not active
+            if (!isActive) {
+                document.querySelectorAll('.tab-content').forEach(content => {
+                    content.classList.remove('active');
+                });
 
-        // Remove active class from all buttons
+                // Remove active class from all buttons
+                document.querySelectorAll('.tab-button').forEach(button => {
+                    button.classList.remove('bg-blue-500', 'text-white');
+                    button.classList.add('bg-gray-300', 'text-gray-800');
+                });
+
+                // Show the selected tab content
+                targetElement.classList.add('active');
+
+                // Highlight the selected tab button
+                document.querySelector(`.tab-button[data-target="${targetId}"]`).classList.add('bg-blue-500', 'text-white');
+                document.querySelector(`.tab-button[data-target="${targetId}"]`).classList.remove('bg-gray-300', 'text-gray-800');
+            } else {
+                // If the clicked tab is active, hide it
+                targetElement.classList.remove('active');
+                document.querySelector(`.tab-button[data-target="${targetId}"]`).classList.remove('bg-blue-500', 'text-white');
+                document.querySelector(`.tab-button[data-target="${targetId}"]`).classList.add('bg-gray-300', 'text-gray-800');
+            }
+        }
+
+        // Event listeners for tab buttons
         document.querySelectorAll('.tab-button').forEach(button => {
-        button.classList.remove('bg-blue-500', 'text-white');
-        button.classList.add('bg-gray-300', 'text-gray-800');
-    });
-
-        // Show the selected tab content
-        targetElement.classList.add('active');
-
-        // Highlight the selected tab button
-        document.querySelector(`.tab-button[data-target="${targetId}"]`).classList.add('bg-blue-500', 'text-white');
-        document.querySelector(`.tab-button[data-target="${targetId}"]`).classList.remove('bg-gray-300', 'text-gray-800');
-    } else {
-        // If the clicked tab is active, hide it
-        targetElement.classList.remove('active');
-        document.querySelector(`.tab-button[data-target="${targetId}"]`).classList.remove('bg-blue-500', 'text-white');
-        document.querySelector(`.tab-button[data-target="${targetId}"]`).classList.add('bg-gray-300', 'text-gray-800');
-    }
-    }
-
-   // Event listeners for tab buttons
-    document.querySelectorAll('.tab-button').forEach(button => {
-        button.addEventListener('click', () => switchTab(button.getAttribute('data-target')));
-    });
-
-    // Ensure no tabs are active initially
-    document.addEventListener('DOMContentLoaded', () => {
-        document.querySelectorAll('.tab-content').forEach(content => {
-        content.classList.remove('active');
-    });
-
-    document.querySelectorAll('.tab-button').forEach(button => {
-            button.classList.add('bg-gray-300', 'text-gray-800');
+            button.addEventListener('click', () => switchTab(button.getAttribute('data-target')));
         });
-    });
+
+        // Ensure no tabs are active initially
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelectorAll('.tab-content').forEach(content => {
+                content.classList.remove('active');
+            });
+
+            document.querySelectorAll('.tab-button').forEach(button => {
+                button.classList.add('bg-gray-300', 'text-gray-800');
+            });
+        });
 
         function updateCodeContent() {
             fetch('/json/unnamed.json')
@@ -414,7 +489,7 @@
                     if (data.particlecontrollerh) {
                         const codeElement4 = document.getElementById('particlecontrollerh');
                         codeElement4.textContent = data.particlecontrollerh;
-                        hljs.highlightElement(codeElement4); 
+                        hljs.highlightElement(codeElement4);
                     }
                     if (data.particlecontroller) {
                         const codeElement5 = document.getElementById('particlecontroller');
@@ -472,4 +547,5 @@
         }
     </script>
 </body>
+
 </html>
