@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.10.0/styles/vs2015.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <title>Robin Zeitlin | xyz</title>
+    <link rel="stylesheet" href="/src/output.css">
+    <style>
+        .tab-content {
+            display: none;
+        }
+        .tab-content.active {
+            display: block;
+        }
+
+        body {
+            padding-top: 60px; /* Default padding for larger screens */
+        }
+
+        @media (max-width: 640px) {
+            body {
+                padding-top: 200px; /* Increased padding for smaller screens (phones) */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navigation-bar">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="/index.html" class="primary-font !text-4xl">Robin Zeitlin | GamePlay Programmer</a>
+            <div class="flex space-x-4">
+                <!--- Linkedin -->
+                <a href="https://www.linkedin.com/in/robin-zeitlin-778a9127a/" class="navigation-image">
+                    <img src="/img/LinkedinIcon.png" alt="LinkedIn Icon" class="navigation-image">
+                </a>
+                <!--- Github -->
+                <a href="https://github.com/robinzeitlin" class="navigation-image">
+                    <img src="/img/GithubIcon.png" alt="GitHub Icon" class="navigation-image">
+                </a>
+
+                <a href="/pdf/RobinZeitlinCurriculumVitae.pdf" class="navigation-image">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
+                        viewBox="0 0 34 42.5" enable-background="new 0 0 34 34" xml:space="preserve">
+                        <g>
+                            <path
+                                d="M30,4.8C30,2.7,28.3,1,26.2,1H7.8C5.7,1,4,2.7,4,4.8v24.4C4,31.3,5.7,33,7.8,33h18.4c2.1,0,3.8-1.7,3.8-3.8V4.8z M28,29.2   c0,1-0.8,1.8-1.8,1.8H7.8c-1,0-1.8-0.8-1.8-1.8V4.8C6,3.8,6.8,3,7.8,3h18.4c1,0,1.8,0.8,1.8,1.8V29.2z" fill="#ffff"/>
+                            <path
+                                d="M10.9,19h11.8c0.3,0,0.6-0.1,0.8-0.4c0.2-0.2,0.3-0.5,0.2-0.8c-0.4-2.4-1.9-4.3-3.9-5.2c0.6-0.7,1-1.6,1-2.7   c0-2.2-1.8-4-4-4s-4,1.8-4,4c0,1,0.4,1.9,1,2.7c-2,1-3.6,2.9-3.9,5.2c0,0.3,0,0.6,0.2,0.8C10.3,18.9,10.6,19,10.9,19z M14.8,10   c0-1.1,0.9-2,2-2s2,0.9,2,2s-0.9,2-2,2S14.8,11.1,14.8,10z M16.8,14c2,0,3.8,1.2,4.6,3h-9.2C13,15.2,14.8,14,16.8,14z" fill="#ffff" />
+                            <path d="M25,22H9c-0.6,0-1,0.4-1,1s0.4,1,1,1h16c0.6,0,1-0.4,1-1S25.6,22,25,22z" fill="#ffff"/>
+                            <path d="M25,26H9c-0.6,0-1,0.4-1,1s0.4,1,1,1h16c0.6,0,1-0.4,1-1S25.6,26,25,26z" fill="#ffff" />
+                        </g>
+                    </svg>
+                </a>
+
+                <a href="https://store.steampowered.com/developer/robinz" class="navigation-image">
+                    <img src="/img/steamicon.png" alt="GitHub Icon" class="navigation-image">
+                </a>
+
+            </div>
+
+            <div class="space-x-4">
+                <a href="#video-section" class="navigation-slot primary-font">Video</a>
+                <a href="#backfaceculling" class="navigation-slot primary-font">Manual face Culling</a>
+                <a href="#trees" class="navigation-slot primary-font">Tree Instantiation</a>
+                <a href="#architecture" class="navigation-slot primary-font">Architecture</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <div id="video-section" class="youtube-video">
+        <iframe class="w-full h-full" src="https://www.youtube.com/embed/fcwngWPXQtg?si=2ibHDR2syR6cg81q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="container mx-auto p-4">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="flex flex-col items-center justify-center">
+                <h1 class="primary-font !text-6xl">Split Fiction</h1>
+                <h1 class="primary-font !text-4xl !font-thin !text-amber-200">Unreal Engine 5</h1>
+                <h1 class="primary-font !text-2xl !font-thin">👥 81+ </h1> 
+                <h1 class="primary-font !text-2xl !font-thin">📅 2024/9- 2024/12</h1>
+                <a href="https://www.hazelight.se/" target="_blank" class="mr-4">
+                    <img src="/img/hazelightLogo.jpg" alt="Steam Logo" class="h-16 w-16 object-contain">
+                </a>
+            </div>
+        
+            <div class="items-center justify-center p-4 rounded-lg">
+                <h1 class="primary-font">As a Collision Designer Contractor on this project, I focused on completing UE5 tickets related specifically to volume and collision adjustments provided by QA, ensuring a smooth and consistent gameplay experience for players.</h1>
+            </div>
+        
+        </div>
+        
+
+        <div class="flex flex-col items-center justify-center p-4 rounded-lg overflow-hidden">
+            <img src="/img/splitfictionlevelshowcase.gif" alt="Entitys spawning" class="object-cover object-center w-1/2 h-auto rounded-lg">
+        </div>
+
+    </div>
+    
+
+    <!-- Footer Section -->
+    <footer class="section-information mt-12">
+        <div class="bg-black bg-opacity-0 flex justify-center items-center gap-4">
+            <a href="https://www.linkedin.com/in/robin-zeitlin-778a9127a/" class="navigation-image">
+                <img src="/img/LinkedinIcon.png" alt="Image 1" class="navigation-image">
+            </a>
+
+            <a href="https://github.com/robinzeitlin" class="navigation-image">
+                <img src="/img/GithubIcon.png" alt="GitHub Icon" class="navigation-image">
+            </a>
+
+            <a href="/pdf/RobinZeitlinCurriculumVitae.pdf" class="navigation-image">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
+                    viewBox="0 0 34 42.5" enable-background="new 0 0 34 34" xml:space="preserve">
+                    <g>
+                        <path
+                            d="M30,4.8C30,2.7,28.3,1,26.2,1H7.8C5.7,1,4,2.7,4,4.8v24.4C4,31.3,5.7,33,7.8,33h18.4c2.1,0,3.8-1.7,3.8-3.8V4.8z M28,29.2   c0,1-0.8,1.8-1.8,1.8H7.8c-1,0-1.8-0.8-1.8-1.8V4.8C6,3.8,6.8,3,7.8,3h18.4c1,0,1.8,0.8,1.8,1.8V29.2z" fill="#ffff"/>
+                        <path
+                            d="M10.9,19h11.8c0.3,0,0.6-0.1,0.8-0.4c0.2-0.2,0.3-0.5,0.2-0.8c-0.4-2.4-1.9-4.3-3.9-5.2c0.6-0.7,1-1.6,1-2.7   c0-2.2-1.8-4-4-4s-4,1.8-4,4c0,1,0.4,1.9,1,2.7c-2,1-3.6,2.9-3.9,5.2c0,0.3,0,0.6,0.2,0.8C10.3,18.9,10.6,19,10.9,19z M14.8,10   c0-1.1,0.9-2,2-2s2,0.9,2,2s-0.9,2-2,2S14.8,11.1,14.8,10z M16.8,14c2,0,3.8,1.2,4.6,3h-9.2C13,15.2,14.8,14,16.8,14z" fill="#ffff" />
+                        <path d="M25,22H9c-0.6,0-1,0.4-1,1s0.4,1,1,1h16c0.6,0,1-0.4,1-1S25.6,22,25,22z" fill="#ffff"/>
+                        <path d="M25,26H9c-0.6,0-1,0.4-1,1s0.4,1,1,1h16c0.6,0,1-0.4,1-1S25.6,26,25,26z" fill="#ffff" />
+                    </g>
+                </svg>
+            </a>
+
+            <a href="https://store.steampowered.com/developer/robinz" class="navigation-image">
+                <img src="/img/steamicon.png" alt="GitHub Icon" class="navigation-image">
+            </a>
+
+        </div>
+        <div class="flex justify-center mt-8">
+            <button onclick="scrollToTop()" class="bg-blue-500 text-white px-4 py-2 rounded shadow hover:bg-blue-700">Top</button>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/cpp.min.js"></script>
+    <script>
+    // Function to handle tab switching with toggle behavior
+    function switchTab(targetId) {
+    const targetElement = document.getElementById(targetId);
+    const isActive = targetElement.classList.contains('active');
+
+    // Hide all tab content if the clicked tab is not active
+    if (!isActive) {
+        document.querySelectorAll('.tab-content').forEach(content => {
+            content.classList.remove('active');
+        });
+
+        // Remove active class from all buttons
+        document.querySelectorAll('.tab-button').forEach(button => {
+        button.classList.remove('bg-blue-500', 'text-white');
+        button.classList.add('bg-gray-300', 'text-gray-800');
+    });
+
+        // Show the selected tab content
+        targetElement.classList.add('active');
+
+        // Highlight the selected tab button
+        document.querySelector(`.tab-button[data-target="${targetId}"]`).classList.add('bg-blue-500', 'text-white');
+        document.querySelector(`.tab-button[data-target="${targetId}"]`).classList.remove('bg-gray-300', 'text-gray-800');
+    } else {
+        // If the clicked tab is active, hide it
+        targetElement.classList.remove('active');
+        document.querySelector(`.tab-button[data-target="${targetId}"]`).classList.remove('bg-blue-500', 'text-white');
+        document.querySelector(`.tab-button[data-target="${targetId}"]`).classList.add('bg-gray-300', 'text-gray-800');
+    }
+    }
+
+   // Event listeners for tab buttons
+    document.querySelectorAll('.tab-button').forEach(button => {
+        button.addEventListener('click', () => switchTab(button.getAttribute('data-target')));
+    });
+
+    // Ensure no tabs are active initially
+    document.addEventListener('DOMContentLoaded', () => {
+        document.querySelectorAll('.tab-content').forEach(content => {
+        content.classList.remove('active');
+    });
+
+    document.querySelectorAll('.tab-button').forEach(button => {
+            button.classList.add('bg-gray-300', 'text-gray-800');
+        });
+    });
+
+        function updateCodeContent() {
+            fetch('/json/voxelworld.json')
+                .then(response => response.json())
+                .then(data => {
+                    // Update code snippets
+                    if (data.terrainh) {
+                        const codeElement1 = document.getElementById('terrainh');
+                        codeElement1.textContent = data.terrainh;
+                        hljs.highlightElement(codeElement1);
+                    }
+                    if (data.terraincpp) {
+                        const codeElement2 = document.getElementById('terraincpp');
+                        codeElement2.textContent = data.terraincpp;
+                        hljs.highlightElement(codeElement2);
+                    }
+                })
+                .catch(error => console.error('Error fetching JSON:', error));
+        }
+
+        // Call the function to update the content and highlight
+        updateCodeContent();
+
+        // Optionally, initialize with the first tab active
+        switchTab('content1');
+
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
